@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ShowRoomeBetter">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse/java-2020-12/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="15"/>
+    <property name="source" value="15"/>
+    <path id="Apache Tomcat v8.5 [Apache Tomcat v8.5].libraryclasspath">
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/annotations-api.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/catalina-ant.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/catalina-ha.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/catalina-storeconfig.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/catalina-tribes.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/catalina.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/ecj-4.6.3.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/el-api.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/jasper-el.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/jasper.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/jaspic-api.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/jsp-api.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/servlet-api.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-api.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-coyote.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-dbcp.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-i18n-de.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-i18n-ja.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-i18n-ko.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-i18n-ru.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-i18n-zh-CN.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-jdbc.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-jni.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-util-scan.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-util.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/tomcat-websocket.jar"/>
+        <pathelement location="../../OneDrive/Desktop/apache-tomcat-8.5.61-windows-x64/apache-tomcat-8.5.61/lib/websocket-api.jar"/>
+    </path>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="WebContent/WEB-INF/lib/mysql-connector-java-8.0.25.jar"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="../../.p2/pool/plugins/org.junit_4.13.0.v20200204-1500.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <path id="ShowRoomeBetter.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Apache Tomcat v8.5 [Apache Tomcat v8.5].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <pathelement location="../../Downloads/guava-25.0-jre.jar"/>
+        <pathelement location="../../Downloads/byte-buddy-1.8.15.jar"/>
+        <pathelement location="../../Downloads/okhttp-3.11.0.jar"/>
+        <pathelement location="../../Downloads/okio-1.14.0.jar"/>
+        <pathelement location="../../Downloads/commons-exec-1.3.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.base.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.controls.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.fxml.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.graphics.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.media.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.swing.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.web.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx-swt.jar"/>
+        <pathelement location="../../Downloads/servlet-api.jar"/>
+        <pathelement location="../../Downloads/mysql-connector-java-8.0.22.jar"/>
+        <pathelement location="../../Downloads/jstl-1.2.jar"/>
+        <pathelement location="../../Downloads/jsp-api-2.1.jar"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="../../Downloads/client-combined-3.141.59.jar"/>
+        <pathelement location="../../Downloads/client-combined-3.141.59-sources.jar"/>
+    </path>
+    <path id="run.Main (15).classpath">
+        <path refid="ShowRoomeBetter.classpath"/>
+        <path refid="Apache Tomcat v8.5 [Apache Tomcat v8.5].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <pathelement location="../../Downloads/guava-25.0-jre.jar"/>
+        <pathelement location="../../Downloads/byte-buddy-1.8.15.jar"/>
+        <pathelement location="../../Downloads/okhttp-3.11.0.jar"/>
+        <pathelement location="../../Downloads/okio-1.14.0.jar"/>
+        <pathelement location="../../Downloads/commons-exec-1.3.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.base.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.controls.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.fxml.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.graphics.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.media.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.swing.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.web.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx-swt.jar"/>
+        <pathelement location="../../Downloads/servlet-api.jar"/>
+        <pathelement location="../../Downloads/mysql-connector-java-8.0.22.jar"/>
+        <pathelement location="../../Downloads/jstl-1.2.jar"/>
+        <pathelement location="../../Downloads/jsp-api-2.1.jar"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="../../Downloads/client-combined-3.141.59.jar"/>
+        <pathelement location="../../Downloads/client-combined-3.141.59-sources.jar"/>
+    </path>
+    <path id="run.Main (16).classpath">
+        <path refid="ShowRoomeBetter.classpath"/>
+        <path refid="Apache Tomcat v8.5 [Apache Tomcat v8.5].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <pathelement location="../../Downloads/guava-25.0-jre.jar"/>
+        <pathelement location="../../Downloads/byte-buddy-1.8.15.jar"/>
+        <pathelement location="../../Downloads/okhttp-3.11.0.jar"/>
+        <pathelement location="../../Downloads/okio-1.14.0.jar"/>
+        <pathelement location="../../Downloads/commons-exec-1.3.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.base.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.controls.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.fxml.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.graphics.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.media.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.swing.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx.web.jar"/>
+        <pathelement location="../../OneDrive/Desktop/javafx-sdk-15.0.1/lib/javafx-swt.jar"/>
+        <pathelement location="../../Downloads/servlet-api.jar"/>
+        <pathelement location="../../Downloads/mysql-connector-java-8.0.22.jar"/>
+        <pathelement location="../../Downloads/jstl-1.2.jar"/>
+        <pathelement location="../../Downloads/jsp-api-2.1.jar"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="../../Downloads/client-combined-3.141.59.jar"/>
+        <pathelement location="../../Downloads/client-combined-3.141.59-sources.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.xtend"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="ShowRoomeBetter.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Main (15)">
+        <java classname="logic.appcontroller.Main" failonerror="true" fork="yes">
+            <jvmarg line="--module-path C:\Users\vlrbr\OneDrive\Desktop\javafx-sdk-15.0.1\lib --add-modules javafx.controls,javafx.fxml"/>
+            <classpath refid="run.Main (15).classpath"/>
+        </java>
+    </target>
+    <target name="Main (16)">
+        <java classname="logic.engclasses.utils.Main" failonerror="true" fork="yes">
+            <jvmarg line="--module-path C:\Users\vlrbr\OneDrive\Desktop\javafx-sdk-15.0.1\lib --add-modules javafx.controls,javafx.fxml"/>
+            <classpath refid="run.Main (16).classpath"/>
+        </java>
+    </target>
+</project>

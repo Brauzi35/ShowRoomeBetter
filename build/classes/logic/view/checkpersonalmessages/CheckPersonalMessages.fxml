@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootpane7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controller.guicontroller.checkpersonalmessages.GuiControllerCheckPersonalMessages">
+   <children>
+      <Pane layoutX="19.0" layoutY="17.0" prefHeight="544.0" prefWidth="987.0" style="-fx-background-color: purple; -fx-background-radius: 20px20px20px20px; -fx-border-color: purple; -fx-border-radius: 20; -fx-border-width: 3;">
+         <children>
+            <ListView fx:id="listViewRequests" layoutX="16.0" layoutY="13.0" prefHeight="519.0" prefWidth="209.0" />
+            <Pane layoutX="244.0" layoutY="13.0" prefHeight="519.0" prefWidth="731.0" style="-fx-background-color: white; -fx-background-radius: 20px20px20px20px; -fx-border-color: white; -fx-border-radius: 20; -fx-border-width: 3;">
+               <children>
+                  <Label fx:id="titleLabel" layoutX="8.0" layoutY="24.0" prefHeight="45.0" prefWidth="345.0" text="titolo" textFill="PURPLE" wrapText="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sponsorLabel" layoutX="382.0" layoutY="27.0" prefHeight="45.0" prefWidth="345.0" text="sponsor" textFill="PURPLE" wrapText="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descriptionShowLabel" alignment="TOP_LEFT" layoutX="7.0" layoutY="83.0" prefHeight="165.0" prefWidth="331.0" style="-fx-border-color: purple; -fx-border-radius: 20; -fx-border-radius: 20;" text="description" textFill="PURPLE" wrapText="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descriptionSponsorLabel" alignment="TOP_LEFT" layoutX="380.0" layoutY="83.0" prefHeight="165.0" prefWidth="331.0" style="-fx-border-color: purple; -fx-border-radius: 20; -fx-border-radius: 20;" text="description" textFill="PURPLE" wrapText="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-1.88885498046875" endY="-17.444442749023438" layoutX="361.0" layoutY="27.0" startX="-1.88885498046875" startY="219.0" stroke="PURPLE" />
+                  <Button fx:id="declineButton" layoutX="268.0" layoutY="454.0" mnemonicParsing="false" onAction="#decline" prefHeight="34.0" prefWidth="80.0" text="decline" />
+                  <Button fx:id="acceptButton" layoutX="371.0" layoutY="454.0" mnemonicParsing="false" onAction="#accept" prefHeight="34.0" prefWidth="80.0" text="accept" />
+                  <Label layoutX="8.0" layoutY="281.0" prefHeight="45.0" prefWidth="75.0" text="activity" textFill="PURPLE" wrapText="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="323.0" prefHeight="45.0" prefWidth="88.0" text="capacity" textFill="PURPLE" wrapText="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="acivityLabel" layoutX="125.0" layoutY="280.0" prefHeight="45.0" prefWidth="589.0" text="default" textFill="PURPLE" wrapText="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="capacityLabel" layoutX="125.0" layoutY="325.0" prefHeight="45.0" prefWidth="589.0" text="default" textFill="PURPLE" wrapText="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="acceptedPane" layoutX="91.0" layoutY="117.0" prefHeight="285.0" prefWidth="537.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: purple; -fx-border-width: 4;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="6.0" layoutY="72.0" prefHeight="116.0" prefWidth="525.0" text="Accepted" textFill="#00ff2b">
+                           <font>
+                              <Font name="System Bold" size="43.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="refusedPane" layoutX="91.0" layoutY="116.0" prefHeight="285.0" prefWidth="537.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: purple; -fx-border-width: 4;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="6.0" layoutY="72.0" prefHeight="116.0" prefWidth="525.0" text="Refused" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="43.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="norequestsPane" layoutX="-1.0" layoutY="-3.0" prefHeight="525.0" prefWidth="731.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: purple; -fx-border-width: 4;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="57.0" layoutY="120.0" prefHeight="285.0" prefWidth="618.0" text="You have no requests" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="43.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

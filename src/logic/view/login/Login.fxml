@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginroot" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" opacity="0.47" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ph.-Virginia-Bettoja-Istituto-Italiano-di-Fotografia-e1554480067558.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameTextField" layoutX="336.0" layoutY="222.0" prefHeight="55.0" prefWidth="373.0" promptText="Username">
+         <font>
+            <Font name="SansSerif Regular" size="25.0" />
+         </font>
+      </TextField>
+      <Button fx:id="loginButton" layoutX="434.0" layoutY="433.0" mnemonicParsing="false" onAction="#loginClicked" prefHeight="48.0" prefWidth="187.0" text="Login" textFill="#8e8e8e">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="122.0" layoutY="46.0" prefHeight="43.0" prefWidth="254.0" text="ShowrOOme" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="75.0" layoutX="26.0" layoutY="19.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://image.flaticon.com/icons/png/512/26/26362.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="343.0" layoutY="367.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Password dimenticata">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="434.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#caricaregistrazione" prefHeight="48.0" prefWidth="187.0" text="Registrati" textFill="#8e8e8e">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordBox" layoutX="336.0" layoutY="305.0" prefHeight="55.0" prefWidth="373.0" promptText="Password">
+         <font>
+            <Font name="SansSerif Regular" size="25.0" />
+         </font>
+      </PasswordField>
+      <MenuButton fx:id="typeMenuButton" layoutX="336.0" layoutY="136.0" mnemonicParsing="false" text="Select Account Type">
+        <items>
+          <MenuItem fx:id="standardUserButton" mnemonicParsing="false" onAction="#standardUserButtonClick" text="StandardUser" />
+          <MenuItem fx:id="artistButton" mnemonicParsing="false" onAction="#artistButtonClick" text="Artist" />
+            <MenuItem fx:id="sponsorButton" mnemonicParsing="false" onAction="#sponsorButtonClick" text="Sponsor" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
+

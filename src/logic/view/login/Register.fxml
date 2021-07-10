@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controller.guicontroller.login.GuiControllerRegister">
+   <children>
+      <AnchorPane fx:id="cavallo2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #aaa6bf;">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="75.0" layoutX="26.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://image.flaticon.com/icons/png/512/26/26362.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="109.0" layoutY="40.0" prefHeight="43.0" prefWidth="254.0" text="ShowrOOme" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="164.0" prefHeight="53.0" prefWidth="1023.0" text="What type of account do you wish to register?" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="userButton" layoutX="428.0" layoutY="451.0" mnemonicParsing="false" onAction="#userClicked" prefHeight="99.0" prefWidth="169.0" text="StandardUser">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="artistButton" layoutX="428.0" layoutY="307.0" mnemonicParsing="false" onAction="#artistClicked" prefHeight="99.0" prefWidth="169.0" text="Artist">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sponsorButton" layoutX="428.0" layoutY="597.0" mnemonicParsing="false" onAction="#sponsorClicked" prefHeight="99.0" prefWidth="169.0" text="Sponsor">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="artistPane" layoutX="30.0" layoutY="110.0" prefHeight="579.0" prefWidth="963.0" style="-fx-background-color: purple; -fx-background-radius: 20; -fx-border-radius: 20;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="110.0">
+               <children>
+                  <TextField fx:id="usernameBoxArtist" layoutX="59.0" layoutY="17.0" prefHeight="56.0" prefWidth="850.0" promptText="username">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="passwordBoxArtist" layoutX="59.0" layoutY="117.0" prefHeight="56.0" prefWidth="850.0" promptText="password">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="emailBoxArtist" layoutX="59.0" layoutY="217.0" prefHeight="56.0" prefWidth="850.0" promptText="email">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="descriptionBoxArtist" layoutX="59.0" layoutY="317.0" prefHeight="56.0" prefWidth="850.0" promptText="description">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="talentBoxArtist" layoutX="59.0" layoutY="417.0" prefHeight="56.0" prefWidth="850.0" promptText="talent (es. singer, dancer)">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="registerArtistButton" layoutX="59.0" layoutY="500.0" mnemonicParsing="false" onAction="#registerArtist" prefHeight="74.0" prefWidth="277.0" text="Register!">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="usersPane" layoutX="30.0" layoutY="110.0" prefHeight="579.0" prefWidth="963.0" style="-fx-background-color: purple; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <children>
+                  <TextField fx:id="usernameBoxUser" layoutX="59.0" layoutY="60.0" prefHeight="56.0" prefWidth="850.0" promptText="username">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="passwordBoxUser" layoutX="59.0" layoutY="160.0" prefHeight="56.0" prefWidth="850.0" promptText="password">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="registerUserButton" layoutX="59.0" layoutY="472.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="74.0" prefWidth="277.0" text="Register!">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sponsorPane" layoutX="30.0" layoutY="110.0" prefHeight="579.0" prefWidth="963.0" style="-fx-background-color: purple; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <children>
+                  <TextField fx:id="usernameBoxSponsor" layoutX="59.0" layoutY="13.0" prefHeight="56.0" prefWidth="850.0" promptText="username">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="passwordBoxSponsor" layoutX="59.0" layoutY="113.0" prefHeight="56.0" prefWidth="850.0" promptText="password">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="activityBox" layoutX="59.0" layoutY="213.0" prefHeight="56.0" prefWidth="850.0" promptText="activity ">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="descriptionBoxSponsor" layoutX="59.0" layoutY="313.0" prefHeight="56.0" prefWidth="850.0" promptText="description">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="capacityBoxSponsor" layoutX="59.0" layoutY="413.0" prefHeight="56.0" prefWidth="850.0" promptText="capacity (in numbers, es. 320)">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="registerSponsorButton" layoutX="59.0" layoutY="496.0" mnemonicParsing="false" onAction="#registerSponsor" prefHeight="74.0" prefWidth="277.0" text="Register!">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

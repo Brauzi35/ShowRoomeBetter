@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="910.0" prefWidth="1259.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controller.guicontroller.findliveevent.GuiControllerFindLiveEvent">
+   <children>
+      <ImageView fitHeight="912.0" fitWidth="989.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-2.0" AnchorPane.topAnchor="-1.0">
+         <image>
+            <Image url="@../Location_map_Italy_Rome.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PURPLE" height="913.0" layoutX="821.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="12.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="eurPlace" layoutX="249.0" layoutY="672.0" mnemonicParsing="false" onAction="#eurClick" prefHeight="73.0" prefWidth="89.0" style="-fx-background-color: null;">
+         <graphic>
+            <ImageView fitHeight="141.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconfinder_Facebook_UI-06_2344292%20(3).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="pignetoPlace" layoutX="483.0" layoutY="406.0" mnemonicParsing="false" onAction="#pignetoClick" prefHeight="73.0" prefWidth="89.0" style="-fx-background-color: null;">
+         <graphic>
+            <ImageView fitHeight="141.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconfinder_Facebook_UI-06_2344292%20(3).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="villaPlace" layoutX="171.0" layoutY="428.0" mnemonicParsing="false" onAction="#villaClick" prefHeight="73.0" prefWidth="89.0" style="-fx-background-color: null;">
+         <graphic>
+            <ImageView fitHeight="141.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconfinder_Facebook_UI-06_2344292%20(3).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="statuarioPlace" layoutX="551.0" layoutY="639.0" mnemonicParsing="false" onAction="#statuarioClick" prefHeight="73.0" prefWidth="89.0" style="-fx-background-color: null;">
+         <graphic>
+            <ImageView fitHeight="141.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconfinder_Facebook_UI-06_2344292%20(3).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="nameLabel" layoutX="833.0" prefHeight="83.0" prefWidth="427.0" text="Luogo" wrapText="true" AnchorPane.leftAnchor="831.6666666666667" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="artistLabel" layoutX="833.0" layoutY="80.0" prefHeight="83.0" prefWidth="188.0" text="Artista" textFill="PURPLE" wrapText="true" AnchorPane.leftAnchor="831.6666666666667" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionLabel" alignment="TOP_LEFT" layoutX="832.0" layoutY="179.0" prefHeight="453.0" prefWidth="427.0" text="Descrizione evento" wrapText="true" AnchorPane.bottomAnchor="280.6666666666667" AnchorPane.leftAnchor="832.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
