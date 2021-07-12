@@ -1,18 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
-<%@page import = "logic.appcontroller.SessionArtistController"  %>
-<%@page import = "logic.utils.SessionArtist"  %>
-<%@page import = "logic.appcontroller.HomepageArtistController"  %>
-<%@page import = "logic.bean.EventBean" %>
+
+<%@page import = "logic.engclasses.utils.Credentials"  %>
+<%@page import = "logic.controller.appcontroller.ViewProfile"  %>
+<%@page import = "logic.engclasses.bean.EventBean" %>
 
 
 <% 
-    HomepageArtistController hac = new HomepageArtistController();
+ViewProfile hac = new ViewProfile();
     
-	SessionArtistController sac = new SessionArtistController();
-	sac.sessionArtistSetup();
-	SessionArtist instanceA = SessionArtist.getInstance();
+	
+Credentials instanceA = Credentials.getInstance();
     String username = instanceA.getUsername();
     EventBean eventname = hac.getLiveEventWeb();
 

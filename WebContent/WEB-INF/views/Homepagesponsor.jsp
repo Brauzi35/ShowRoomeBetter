@@ -1,11 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%> 
-    <%@page import = "logic.utils.SessionSponsor"  %>
-    <%@page import = "logic.appcontroller.SessionSponsorController"  %>
+    <%@page import = "logic.engclasses.utils.Credentials"  %>
+ 
  <%
- SessionSponsorController ssc = new SessionSponsorController();
-	ssc.sessionSponsorSetup();
-	SessionSponsor ss = SessionSponsor.getInstance();
+ 
+	Credentials ss = Credentials.getInstance();
 	String username = ss.getUsername();
 	String activity = ss.getActivity();
 	String capacity = ss.getCapacity();

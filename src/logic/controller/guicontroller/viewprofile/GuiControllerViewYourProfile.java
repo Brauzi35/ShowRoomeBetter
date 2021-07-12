@@ -15,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import logic.controller.appcontroller.ViewProfile;
 import logic.engclasses.bean.EventBean;
+import logic.engclasses.utils.Credentials;
 
 
 public class GuiControllerViewYourProfile implements Initializable {
@@ -119,11 +120,11 @@ public class GuiControllerViewYourProfile implements Initializable {
 		saveButton.setVisible(false);
 		descriptionTexrBar.setVisible(false);
 		//implement a singleton class to update lables 
-		
-		username.setText("Flavietta");
-		email.setText("Default");
-		talent.setText("Default");
-		description.setText("Default");
+		Credentials c = Credentials.getInstance();
+		username.setText(c.getUsername());
+		email.setText(c.getEmail());
+		talent.setText(c.getTalent());
+		description.setText(c.getDescription());
 		//the following lines manage the live event section
 		ViewProfile hac = new ViewProfile();
 		EventBean eb = hac.getLiveEvent(); // if the current artist is hosting any show eb won't be null

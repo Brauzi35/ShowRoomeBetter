@@ -1,6 +1,5 @@
 package logic.controller.appcontroller.login;
 
-import javax.security.auth.login.LoginException;
 
 import logic.engclasses.bean.ArtistBean;
 import logic.engclasses.bean.GeneralUserBean;
@@ -8,7 +7,8 @@ import logic.engclasses.bean.SponsorBean;
 import logic.engclasses.dao.ArtistDao;
 import logic.engclasses.dao.GeneralUserDao;
 import logic.engclasses.dao.SponsorDao;
-import logic.engclasses.utils.SessionUser;
+import logic.engclasses.exceptions.LoginException;
+import logic.engclasses.utils.Credentials;
 import logic.model.Artist;
 import logic.model.GeneralUser;
 import logic.model.Sponsor;
@@ -17,15 +17,18 @@ import logic.model.Sponsor;
 
 public class Login {
 
-public GeneralUserBean login(String username, String password){
+public GeneralUserBean login(String username, String password) throws LoginException{
 		
 		GeneralUserDao gud = new GeneralUserDao();
 		GeneralUser result = gud.login(username, password); //calls the dao login
 		
+		
 		GeneralUserBean gu = new GeneralUserBean();
+		
 		gu.setUsername(result.getUsername());
 		gu.setPassword(result.getPassword());
 		gu.setId(result.getId());
+
 		return gu;
 	}
 	
@@ -61,15 +64,25 @@ public GeneralUserBean login(String username, String password){
 	
 	
 	
-	public void setupSessionUser(int id, String username, String password) throws LoginException{
-		//ho deciso di usare session user per utenti, artisti e sponsor!
-		SessionUser su = SessionUser.getInstance();
+	public void setupCredentials(int id, String username, String password) throws LoginException{
+		Credentials c = Credentials.getInstance();
 		if(id==1) {this.login(username, password);}
-		if(id==2) {this.artistLogin(username, password);}
-		if(id==3) {this.sponsorLogin(username, password);}
-		su.setId(id);
-		su.setUsername(username);
-		su.setPassword(password);
+		if(id==2) {
+			ArtistBean ab = this.artistLogin(username, password);
+			c.setDescription(ab.getDescription());
+			c.setTalent(ab.getTalent());
+			c.setEmail(ab.getEmail());
+		}
+		if(id==3) {
+			SponsorBean sb = this.sponsorLogin(username, password);
+			c.setDescription(sb.getDescription());
+			c.setActivity(sb.getActivity());
+			c.setCapacity(sb.getCapacity());
+			
+		}
+		c.setId(id);
+		c.setUsername(username);
+		c.setPassword(password);
 	}
 	
 }

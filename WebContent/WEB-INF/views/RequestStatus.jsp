@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%> 
-    <%@page import = "logic.appcontroller.RSSApplicationController"  %>
-    <%@page import = "logic.bean.RequestedShowBean"  %>
-        <%@page import = "logic.utils.SessionSponsor"  %>
+    <%@page import = "logic.controller.appcontroller.HostPrivateShow"  %>
+    <%@page import = "logic.engclasses.bean.RequestedShowBean"  %>
+        <%@page import = "logic.engclasses.utils.Credentials"  %>
     
     <%
-    RSSApplicationController rac = new RSSApplicationController();
-    SessionSponsor ss = SessionSponsor.getInstance();
+    HostPrivateShow rac = new HostPrivateShow();
+    Credentials ss = Credentials.getInstance();
 	String username = ss.getUsername();
     RequestedShowBean rsb = null;
     String control = "ok"; 

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="loginroot" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+<AnchorPane fx:id="loginroot" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="768.0" fitWidth="1024.0" opacity="0.47" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -60,6 +60,6 @@
             <MenuItem fx:id="sponsorButton" mnemonicParsing="false" onAction="#sponsorButtonClick" text="Sponsor" />
         </items>
       </MenuButton>
+      <Label fx:id="errorLabelLogin" layoutX="523.0" layoutY="140.0" prefHeight="48.0" prefWidth="294.0" text="Make sure you have specified the correct account type and that username and password are correct" textFill="RED" wrapText="true" />
    </children>
 </AnchorPane>
-

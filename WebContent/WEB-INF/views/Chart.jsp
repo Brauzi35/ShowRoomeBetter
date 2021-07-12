@@ -1,19 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@page import = "logic.appcontroller.ReviewController"  %>
-    <%@page import = "logic.bean.ReviewBean"%>
+    <%@page import = "logic.controller.appcontroller.ReviewAnArtist"  %>
+    <%@page import = "logic.engclasses.bean.ReviewBean"%>
     <%@ page import = "java.util.List" %>
-    <%@page import = " logic.utils.SessionUser" %>
+    <%@page import = " logic.engclasses.utils.Credentials" %>
     
     <%
 
     String strParam = (String)session.getAttribute("artist2");
-    ReviewController rc = new ReviewController();
+    ReviewAnArtist rc = new ReviewAnArtist();
     List<ReviewBean> lrb = rc.getReviews(strParam); //lrb contains every review for a specified artist
     String review1 = "";
     String review2 = "";
     String review3= "";
-    SessionUser su = SessionUser.getInstance();
+    Credentials su = Credentials.getInstance();
     String username = su.getUsername();
     %>
 <!DOCTYPE html>

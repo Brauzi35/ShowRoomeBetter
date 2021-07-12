@@ -8,11 +8,13 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import logic.controller.appcontroller.BookAPlaceAndCreateAnEvent;
 import logic.engclasses.bean.PlaceBean;
 import logic.engclasses.exceptions.DescriptionTooLongException;
@@ -104,10 +106,12 @@ public class ControllerGuiBookAPlaceAndCreateAnEvent implements Initializable{
 			view = ef.createView(TypeException.EMPTYF);
 			rootpane3.getChildren().setAll(view.getRoot());
 		} catch (DescriptionTooLongException e) {
+			
 			ExceptionFactory ef = ExceptionFactory.getInstance();
 			ExceptionView view;
 			view = ef.createView(TypeException.TOOLONG);
 			rootpane3.getChildren().setAll(view.getRoot());
+			//prende view.getRoot come null
 		}
 			
     }

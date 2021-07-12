@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import logic.engclasses.exceptions.DescriptionTooLongException;
-import logic.engclasses.utils.SessionUser;
+import logic.engclasses.utils.Credentials;
 import logic.model.SponsoredShow;
 
 
@@ -143,8 +143,8 @@ public class SponsoredShowDao {
          // STEP 4.1: creazione ed esecuzione della query
             stmtdss = conndss.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY); 
-        	SessionUser su = SessionUser.getInstance();
-            String host = su.getUsername();
+            Credentials c = Credentials.getInstance();
+            String host = c.getUsername();
             String sql = "DELETE FROM sponsored_shows WHERE sponsor = '" +host+"'";
             stmtdss.executeUpdate(sql);
          // STEP 6: Clean-up dell'ambiente

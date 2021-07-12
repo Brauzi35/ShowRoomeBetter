@@ -4,18 +4,27 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+import logic.controller.guicontroller.login.GuiControllerLogin;
 
 public class LoggedSponsorController implements Initializable{
 
 	@FXML
     private AnchorPane rootpane;
 
+	@FXML
+    private Button logoutSponsor;
+	
     @FXML
     private ScrollPane scroll;
 
@@ -39,6 +48,20 @@ public class LoggedSponsorController implements Initializable{
  		
     }
 
+    
+    @FXML
+    void logoutSponsorClick(ActionEvent event) throws IOException {
+    	GuiControllerLogin gc = new GuiControllerLogin();
+    	FXMLLoader load=new FXMLLoader(getClass().getResource("/logic/view/login/Login.fxml"));
+		load.setController(gc);
+		Scene sc=new Scene(load.load());
+		Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+		stage.setScene(sc);
+		stage.show();
+    	
+    	
+    }
+    
     @FXML
     void hostClick(MouseEvent event) {
     	//hostAShow click

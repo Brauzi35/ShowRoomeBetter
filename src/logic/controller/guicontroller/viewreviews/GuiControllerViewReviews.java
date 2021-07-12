@@ -13,7 +13,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import logic.controller.appcontroller.ViewReviews;
 import logic.engclasses.bean.ReviewBean;
-import logic.engclasses.utils.SessionUser;
+import logic.engclasses.exceptions.ArtistNotFoundException;
+import logic.engclasses.utils.Credentials;
 
 
 public class GuiControllerViewReviews implements Initializable{
@@ -73,8 +74,13 @@ public class GuiControllerViewReviews implements Initializable{
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		reviewLabel.setWrapText(true); //this line makes text fit in a label
 		ViewReviews rc = new ViewReviews();
-		SessionUser su = SessionUser.getInstance();
-		lrb = rc.getReviews(su.getUsername());
+		Credentials c = Credentials.getInstance();
+		try {
+			lrb = rc.getReviews(c.getUsername());
+		} catch (ArtistNotFoundException e) {
+			//non si verifica mai durante un'esecuzione corretta
+			e.printStackTrace();
+		}
 		noRevPane.setVisible(false);
 		
 		if(lrb.isEmpty()) {

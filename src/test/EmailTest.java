@@ -1,12 +1,14 @@
 package test;
 //Gianmattia Mignone
-import logic.dao.ArtistDao;
-import logic.entity.Artist;
+
 
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import logic.engclasses.dao.ArtistDao;
+import logic.model.Artist;
 
 public class EmailTest {
 

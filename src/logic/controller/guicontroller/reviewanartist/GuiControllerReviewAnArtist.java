@@ -16,6 +16,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import logic.controller.appcontroller.ReviewAnArtist;
 import logic.engclasses.bean.ReviewBean;
+import logic.engclasses.exceptions.ArtistNotFoundException;
 import logic.engclasses.exceptions.DuplicateReviewException;
 import logic.engclasses.exceptions.ExceptionView;
 import logic.engclasses.utils.ExceptionFactory;
@@ -101,8 +102,15 @@ public class GuiControllerReviewAnArtist implements Initializable{
 		    	writingPane.setVisible(false);//can't write a review while browsing other reviews
 		    	String barName = research.getText(); //gets searched name
 		    	ReviewAnArtist rc = new ReviewAnArtist();
-		    	lrb = rc.getReviews(barName);
-		    	reviewsPane.setVisible(true); //this is the pane where reviews are displayed
+		    	
+		    	try {
+					lrb = rc.getReviews(barName);
+				} catch (ArtistNotFoundException e) {
+					notFoundLabel.setVisible(true);
+					e.printStackTrace();
+				}
+		    	//this is the pane where reviews are displayed
+		    	reviewsPane.setVisible(true);
 		    	if(!lrb.isEmpty()) {
 		    		authorLabel1.setText(lrb.get(0).getAuthor());
 		    		descriptionLabel1.setText(lrb.get(0).getReview());

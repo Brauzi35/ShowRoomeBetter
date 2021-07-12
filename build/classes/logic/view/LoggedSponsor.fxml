@@ -30,22 +30,17 @@
                               <Font name="Rockwell Bold" size="36.0" />
                            </font>
                         </Label>
-                        <Button layoutX="282.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#homepageClick" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0b0f13;" text="Homepage" textFill="WHITE">
+                        <Button layoutX="305.0" layoutY="84.0" mnemonicParsing="false" onMouseClicked="#homepageClick" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0b0f13;" text="Your activity" textFill="WHITE">
                            <font>
-                              <Font name="SansSerif Regular" size="16.0" />
+                              <Font name="SansSerif Regular" size="15.0" />
                            </font>
                         </Button>
-                        <Button layoutX="401.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#hostClick" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0b0f13;" text="Host a show" textFill="WHITE">
+                        <Button layoutX="424.0" layoutY="84.0" mnemonicParsing="false" onMouseClicked="#hostClick" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0b0f13;" text="Host a show" textFill="WHITE">
                            <font>
                               <Font name="SansSerif Regular" size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutX="519.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#reviewClick" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0b0f13;" text="Reviews" textFill="WHITE">
-                           <font>
-                              <Font name="SansSerif Regular" size="16.0" />
-                           </font>
-                        </Button>
-                        <Button layoutX="641.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#settingsClick" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0b0f13;" text="Requests" textFill="WHITE">
+                        <Button layoutX="543.0" layoutY="84.0" mnemonicParsing="false" onMouseClicked="#settingsClick" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #0b0f13;" text="Requests" textFill="WHITE">
                            <font>
                               <Font name="SansSerif Regular" size="16.0" />
                            </font>
@@ -55,6 +50,7 @@
                               <Font size="14.0" />
                            </font>
                         </Label>
+                        <Button fx:id="logoutSponsor" layoutX="944.0" layoutY="52.0" mnemonicParsing="false" onAction="#logoutSponsorClick" text="Logout" />
                      </children>
                   </AnchorPane>
                </children>

@@ -4,16 +4,24 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+import logic.controller.guicontroller.login.GuiControllerLogin;
 
 
 public class LoggedArtistController implements Initializable{
-
+    @FXML
+    private Button logoutArtist;
+    
     @FXML
     private AnchorPane rootpane;
 
@@ -53,6 +61,18 @@ public class LoggedArtistController implements Initializable{
 		}
     }
 
+    @FXML
+    void logoutArtistClick(ActionEvent event) throws IOException {
+    	GuiControllerLogin g = new GuiControllerLogin();
+    	FXMLLoader ldr=new FXMLLoader(getClass().getResource("/logic/view/login/Login.fxml"));
+		ldr.setController(g);
+		Scene scn=new Scene(ldr.load());
+		Stage stg = (Stage)((Node) event.getSource()).getScene().getWindow();
+		stg.setScene(scn);
+		stg.show();
+    }
+
+    
     @FXML
     void reviewClick(MouseEvent event) {
     	//review button action

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import logic.engclasses.exceptions.PendingRequestException;
-import logic.engclasses.utils.SessionSponsor;
+import logic.engclasses.utils.Credentials;
 import logic.model.Sponsor;
 
 
@@ -241,8 +241,8 @@ public class SponsorDao {
          // STEP 4.1: creazione ed esecuzione della query
             stmtsqueue = connsqueue.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY); 
-        	SessionSponsor ss = SessionSponsor.getInstance();
-            String host = ss.getUsername();
+            Credentials c = Credentials.getInstance();
+            String host = c.getUsername();
             String no = "no";
         	String yes ="yes";
             if(partner.equals("")) {

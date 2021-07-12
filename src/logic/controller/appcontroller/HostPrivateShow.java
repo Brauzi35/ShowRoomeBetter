@@ -9,8 +9,7 @@ import logic.engclasses.dao.RequestsDao;
 import logic.engclasses.dao.SponsorDao;
 import logic.engclasses.dao.SponsoredShowDao;
 import logic.engclasses.exceptions.DescriptionTooLongException;
-import logic.engclasses.utils.SessionSponsor;
-
+import logic.engclasses.utils.Credentials;
 import logic.model.Artist;
 import logic.model.RequestedShow;
 import logic.model.Sponsor;
@@ -51,8 +50,8 @@ public class HostPrivateShow {
 			sponsors.add(x);//building reviewBean list
 		}
 		//given the full list now the sessionSponsor username has to be removed
-		SessionSponsor instance = SessionSponsor.getInstance();
-		sponsors.remove(instance.getUsername());
+		Credentials c = Credentials.getInstance();
+		sponsors.remove(c.getUsername());
 		
 		return sponsors;
 		

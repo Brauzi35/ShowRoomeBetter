@@ -4,13 +4,15 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import logic.appcontroller.RegistrationAppController;
-import logic.exceptions.DuplicateUsernameException;
+import logic.controller.appcontroller.login.Register;
+import logic.engclasses.exceptions.DuplicateUsernameException;
+
+
 
 public class TestRegistration1 {
 	@Test
 	public void testRegistrationDuplicateUsername(){
-		RegistrationAppController rac = new RegistrationAppController();
+		Register rac = new Register();
 		boolean duplicateUsername = false;
 		//the user valerio already exists
 		try {

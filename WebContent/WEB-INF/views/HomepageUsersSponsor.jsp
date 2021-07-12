@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%> 
-   <%@page import = "logic.appcontroller.HostShowSponsorController"  %>
-   <%@page import = "logic.appcontroller.HomepageUserController"  %>
-   <%@page import = "logic.bean.ArtistBean"  %>
+   <%@page import = "logic.controller.appcontroller.HostPrivateShow"  %>
+   <%@page import = "logic.controller.appcontroller.FindLiveEvent"  %>
+   <%@page import = "logic.engclasses.bean.ArtistBean"  %>
     <%@ page import = "java.util.List" %>
-        <%@page import = "logic.utils.SessionSponsor"  %>
+        <%@page import = "logic.engclasses.utils.Credentials"  %>
     
    
     <%
-    HostShowSponsorController hssc = new HostShowSponsorController();
+    HostPrivateShow hssc = new HostPrivateShow();
     List<String> artists = hssc.buildArtistStringArray();
-    HomepageUserController huc = new HomepageUserController();
-    SessionSponsor ss = SessionSponsor.getInstance();
+    FindLiveEvent huc = new FindLiveEvent();
+    Credentials ss = Credentials.getInstance();
 	String username = ss.getUsername();
     %>
   

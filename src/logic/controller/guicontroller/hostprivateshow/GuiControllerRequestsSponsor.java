@@ -11,7 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import logic.controller.appcontroller.HostPrivateShow;
 import logic.engclasses.bean.RequestedShowBean;
-import logic.engclasses.utils.SessionSponsor;
+import logic.engclasses.utils.Credentials;
+
 
 
 public class GuiControllerRequestsSponsor implements Initializable{
@@ -76,8 +77,8 @@ public class GuiControllerRequestsSponsor implements Initializable{
     		partner=partnerLabel.getText();
     	}
     	HostPrivateShow rac = new HostPrivateShow();
-    	SessionSponsor instance = SessionSponsor.getInstance();
-    	rac.hostSponsoredShow(titleLabel.getText(), artistLabel.getText(), instance.getUsername(), instance.getActivity(), instance.getCapacity(), partner, descriptionShowLabel.getText());
+    	Credentials c = Credentials.getInstance();
+    	rac.hostSponsoredShow(titleLabel.getText(), artistLabel.getText(), c.getUsername(), c.getActivity(), c.getCapacity(), partner, descriptionShowLabel.getText());
     }
 
 	@Override

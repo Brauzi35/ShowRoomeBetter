@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootpane5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controller.ErrorDescriptionController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="12.0" prefHeight="553.0" prefWidth="1006.0" style="-fx-border-color: purple; -fx-border-radius: 10; -fx-border-width: 3;" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="12.0">
+         <children>
+            <AnchorPane layoutX="20.0" layoutY="55.0" prefHeight="452.0" prefWidth="966.0" style="-fx-border-color: purple; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-color: purple; -fx-background-radius: 10;">
+               <children>
+                  <Label alignment="CENTER" layoutX="118.0" layoutY="128.0" prefHeight="195.0" prefWidth="729.0" text="You already reviewed this artist! " textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

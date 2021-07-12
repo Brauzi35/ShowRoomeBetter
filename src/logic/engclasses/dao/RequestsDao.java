@@ -8,9 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import logic.engclasses.utils.SessionArtist;
-import logic.engclasses.utils.SessionSponsor;
-import logic.engclasses.utils.SessionUser;
+import logic.engclasses.utils.Credentials;
 import logic.model.RequestedShow;
 
 
@@ -41,11 +39,11 @@ public class RequestsDao {
          // STEP 3: apertura connessione
             conngq = DriverManager.getConnection(dbUrl, user, pass);
             
-        	SessionSponsor instance = SessionSponsor.getInstance();
+            Credentials c = Credentials.getInstance();
          // STEP 4.1: creazione ed esecuzione della query
             stmtgq = conngq.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY);
-            String sql = "SELECT * FROM sponsored_shows_queue WHERE host = '" +instance.getUsername()+"'";
+            String sql = "SELECT * FROM sponsored_shows_queue WHERE host = '" +c.getUsername()+"'";
             ResultSet rsgq = stmtgq.executeQuery(sql);
             
             if (!rsgq.first()) { // rs not empty
@@ -162,7 +160,7 @@ public class RequestsDao {
 		Statement stmtgr = null;
         Connection conngr = null;
         List<RequestedShow> lrs = new ArrayList<>();
-        SessionArtist instance = SessionArtist.getInstance();
+        Credentials c = Credentials.getInstance();
         
         try {
         	//STEP 2: loading dinamico del driver mysql
@@ -176,7 +174,7 @@ public class RequestsDao {
          // STEP 4.1: creazione ed esecuzione della query
             stmtgr = conngr.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY);
-            String sql = "SELECT * FROM sponsored_shows_queue WHERE artist = '" +instance.getUsername()+"'";
+            String sql = "SELECT * FROM sponsored_shows_queue WHERE artist = '" +c.getUsername()+"'";
             ResultSet rsgr = stmtgr.executeQuery(sql);
             
             if (!rsgr.first()) { // rs not empty
@@ -291,8 +289,8 @@ public class RequestsDao {
          // STEP 4.1: creazione ed esecuzione della query
             stmtdr = conndr.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY); 
-        	SessionUser su = SessionUser.getInstance();
-            String host = su.getUsername();
+            Credentials c = Credentials.getInstance();
+            String host = c.getUsername();
             String sql = "DELETE FROM sponsored_shows_queue WHERE host = '" +host+"'";
             stmtdr.executeUpdate(sql);
          // STEP 6: Clean-up dell'ambiente

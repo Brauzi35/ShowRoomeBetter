@@ -10,6 +10,7 @@ import java.sql.Statement;
 import java.util.Random;
 
 import logic.engclasses.exceptions.DuplicateUsernameException;
+import logic.engclasses.exceptions.LoginException;
 import logic.model.GeneralUser;
 
 
@@ -31,7 +32,7 @@ public class GeneralUserDao {
 	
 	
 	
-	public GeneralUser login(String username1, String password){
+	public GeneralUser login(String username1, String password) throws LoginException{
 		// STEP 1: dichiarazioni
         Statement stmtLog = null;
         Connection connLog = null;
@@ -51,8 +52,9 @@ public class GeneralUserDao {
             ResultSet rsLog = stmtLog.executeQuery(sql);
             
             if (!rsLog.first()) { // rs not empty
-            	return null;
+            	throw new LoginException("errore nel login (dao)");
             }
+            
          // riposizionamento del cursore
             rsLog.first();
                         
@@ -62,7 +64,6 @@ public class GeneralUserDao {
             int id = rsLog.getInt("idusers");
             
             if (!usrnm.equals(username1)|| !psswrd.equals(password)) {
-            	
             	return null;
             }
             
@@ -73,7 +74,7 @@ public class GeneralUserDao {
             connLog.close();
         } catch (SQLException se) {
             // Errore durante l'apertura della connessione
-            se.printStackTrace();
+        	se.printStackTrace();
         } catch (Exception e) {
             // Errore nel loading del driver
             e.printStackTrace();

@@ -11,7 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import logic.engclasses.utils.SessionSponsor;
+import logic.engclasses.utils.Credentials;
+
 
 
 public class GuiControllerEditCommercialActivity implements Initializable{
@@ -92,10 +93,10 @@ public class GuiControllerEditCommercialActivity implements Initializable{
 			capacityEditbox.setVisible(false);
 			//implement a singleton class for sponsors (SessionSponsor)
 			
-			SessionSponsor ss = SessionSponsor.getInstance();
-			usernameHPS.setText(ss.getUsername());
-			activity.setText(ss.getActivity());
-			capacity.setText(ss.getCapacity());
-			description.setText(ss.getDescription());
+			Credentials c = Credentials.getInstance();
+			usernameHPS.setText(c.getUsername());
+			activity.setText(c.getActivity());
+			capacity.setText(c.getCapacity());
+			description.setText(c.getDescription());
 		}
 }

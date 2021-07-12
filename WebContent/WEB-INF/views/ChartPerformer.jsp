@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@page import = "logic.appcontroller.ReviewController"%>
-    <%@page import = "logic.bean.ReviewBean"%>
+    <%@page import = "logic.controller.appcontroller.ViewReviews"%>
+    <%@page import = "logic.engclasses.bean.ReviewBean"%>
     <%@ page import = "java.util.List" %>
-    <%@page import = "logic.utils.SessionUser"  %>
-        <%@page import = "logic.utils.SessionArtist"  %>
+    <%@page import = "logic.engclasses.utils.Credentials"  %>
+
     
     <%
-    ReviewController rc = new ReviewController();
-    SessionUser instance = SessionUser.getInstance();
-    List<ReviewBean> lrb =rc.getReviews(instance.getUsername());
+    ViewReviews rc = new ViewReviews();
+    
     String control = "ok";
-    SessionArtist instanceA = SessionArtist.getInstance();
+    Credentials instanceA = Credentials.getInstance();
+    List<ReviewBean> lrb =rc.getReviews(instanceA.getUsername());
     String username = instanceA.getUsername();
     %>
     

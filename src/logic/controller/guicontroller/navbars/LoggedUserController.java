@@ -4,14 +4,20 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import logic.engclasses.utils.SessionUser;
+import javafx.stage.Stage;
+import logic.controller.guicontroller.login.GuiControllerLogin;
+import logic.engclasses.utils.Credentials;
 
 
 
@@ -39,10 +45,8 @@ public class LoggedUserController implements Initializable {
     @FXML
     private Label usernameLabel;
 
-    
-    
-    
-    
+    @FXML
+    private Button logoutButton;
 
     @FXML
     void cariHome(MouseEvent event){
@@ -126,6 +130,18 @@ public class LoggedUserController implements Initializable {
 		}
     }
 
+    
+    @FXML
+    void logoutClick(ActionEvent event) throws IOException {
+    	GuiControllerLogin gcl = new GuiControllerLogin();
+    	FXMLLoader loader=new FXMLLoader(getClass().getResource("/logic/view/login/Login.fxml"));
+		loader.setController(gcl);
+		Scene scene=new Scene(loader.load());
+		Stage st = (Stage)((Node) event.getSource()).getScene().getWindow();
+		st.setScene(scene);
+		st.show();
+    }
+    
     @FXML
     void loadlogin(MouseEvent event) {
     	//
@@ -133,8 +149,8 @@ public class LoggedUserController implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		SessionUser su = SessionUser.getInstance();
-		usernameLabel.setText(su.getUsername());
+		Credentials c = Credentials.getInstance();
+		usernameLabel.setText(c.getUsername());
 		//gianmattia
     	 rootpane0.setVisible(false);
     	 rootpane2.setVisible(false);

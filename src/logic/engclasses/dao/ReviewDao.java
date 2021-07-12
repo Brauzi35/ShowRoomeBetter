@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import logic.engclasses.exceptions.ArtistNotFoundException;
 import logic.engclasses.exceptions.DuplicateReviewException;
 import logic.model.Review;
 
@@ -21,7 +22,7 @@ public class ReviewDao {
     private static String dbUrl = "jdbc:mysql://localhost:3306/prova?autoReconnect=true&useSSL=false";
 	private static String driverClassName = "com.mysql.cj.jdbc.Driver";
 	
-	public List<Review> getReview(String artist) {
+	public List<Review> getReview(String artist) throws ArtistNotFoundException{
 		Statement stmtRev = null;
         Connection connRev = null;
         List<Review> r= new ArrayList<>();
@@ -39,7 +40,8 @@ public class ReviewDao {
             ResultSet rsRev = stmtRev.executeQuery(sql);
             
             if (!rsRev.first()) { // rs not empty
-            	return r;
+            	//return r;
+            	throw new ArtistNotFoundException("artist not found");
             }
          // riposizionamento del cursore
             rsRev.first();
@@ -59,8 +61,7 @@ public class ReviewDao {
             connRev.close();
             
         } catch (SQLException se) {
-            // Errore durante l'apertura della connessione
-            se.printStackTrace();
+            throw new ArtistNotFoundException("artist not found");
         } catch (Exception e) {
             // Errore nel loading del driver
             e.printStackTrace();
@@ -84,7 +85,7 @@ public class ReviewDao {
             
 	}
 	
-	public void submitReview(String author, String artist, String review) throws DuplicateReviewException {
+	public void submitReview(String author, String artist, String review) throws DuplicateReviewException{
 		// STEP 1: dichiarazioni
         Statement stmtsr = null;
         Connection connsr = null;

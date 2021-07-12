@@ -6,15 +6,16 @@ import java.util.List;
 import logic.engclasses.bean.ReviewBean;
 import logic.engclasses.dao.ArtistDao;
 import logic.engclasses.dao.ReviewDao;
+import logic.engclasses.exceptions.ArtistNotFoundException;
 import logic.engclasses.exceptions.DuplicateReviewException;
-import logic.engclasses.utils.SessionUser;
+import logic.engclasses.utils.Credentials;
 import logic.model.Artist;
 import logic.model.Review;
 
 
 public class ReviewAnArtist {
 
-	public List<ReviewBean> getReviews(String username) {
+	public List<ReviewBean> getReviews(String username) throws ArtistNotFoundException {
 		List<ReviewBean> lrb = new ArrayList<>();
 		ArtistDao ad = new ArtistDao();
 		Artist a = ad.getArtist(username);
@@ -38,13 +39,13 @@ public class ReviewAnArtist {
 	}
 	
 	public void saveReview(String artist, String review) throws DuplicateReviewException {
-		SessionUser user = SessionUser.getInstance();
+		Credentials c = Credentials.getInstance();
 		//get the string "author" from the singleton class
 		ArtistDao ad = new ArtistDao();
 		Artist a = ad.getArtist(artist);
 		//these 2 lines check if the artist exist in the database
 		ReviewDao rd = new ReviewDao();
-		rd.submitReview(user.getUsername(), a.getUsername(), review);
+		rd.submitReview(c.getUsername(), a.getUsername(), review);
 	}
 	
 }

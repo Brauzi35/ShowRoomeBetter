@@ -1,16 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%> 
-    <%@page import = "logic.appcontroller.RequestsArtistController"  %>
-    <%@page import = "logic.bean.RequestedShowBean"  %>
+    <%@page import = "logic.controller.appcontroller.CheckPersonalMessages"  %>
+    <%@page import = "logic.engclasses.bean.RequestedShowBean"  %>
     <%@ page import = "java.util.List" %>
-            <%@page import = "logic.utils.SessionArtist"  %>
+            <%@page import = "logic.engclasses.utils.Credentials"  %>
     
     <%
-    RequestsArtistController rac = new RequestsArtistController();	
+    CheckPersonalMessages rac = new CheckPersonalMessages();	
     List<String> list = rac.buildRequestsStringArray();
     String state = "good";
     RequestedShowBean show = null;
-    SessionArtist instanceA = SessionArtist.getInstance();
+    Credentials instanceA = Credentials.getInstance();
     String username = instanceA.getUsername();
     try{
     	show = rac.getRequestedShowBean(list.get(0));

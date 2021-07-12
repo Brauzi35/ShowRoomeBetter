@@ -1,14 +1,17 @@
 package logic.controller.guicontroller.login;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-import javax.security.auth.login.LoginException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
@@ -18,9 +21,10 @@ import logic.controller.appcontroller.login.Login;
 import logic.controller.guicontroller.navbars.LoggedArtistController;
 import logic.controller.guicontroller.navbars.LoggedSponsorController;
 import logic.controller.guicontroller.navbars.LoggedUserController;
+import logic.engclasses.exceptions.LoginException;
 
 
-public class GuiControllerLogin {
+public class GuiControllerLogin implements Initializable {
 
 	@FXML
 	private AnchorPane loginroot;
@@ -42,20 +46,30 @@ public class GuiControllerLogin {
 
     @FXML
     private MenuItem sponsorButton;
+    
+    @FXML
+    private Label errorLabelLogin;
 	
 	int identity = 0; //used for understanding which dao to activate, it cannot be 0 -> develop a custom exception! 
 
 	  
 	 @FXML
-	 public void loginClicked(ActionEvent event) throws LoginException, IOException{
+	 public void loginClicked(ActionEvent event) throws IOException{
 
 		 if (identity==0) {
 			 //the user did not select any identity, implement an exception
+			 errorLabelLogin.setVisible(true);
 		 }
 		 else if (identity==1) {
 			 //std user selected
 			 Login lc = new Login();
-			 lc.setupSessionUser(identity, this.usernameTextField.getText(), this.passwordBox.getText());
+			 try {
+				lc.setupCredentials(identity, this.usernameTextField.getText(), this.passwordBox.getText());
+			} catch (LoginException e) {
+				errorLabelLogin.setVisible(true);
+				e.printStackTrace();
+			} 
+		 	
 			 FXMLLoader loader=new FXMLLoader(getClass().getResource("/logic/view/LoggedUser.fxml"));
 			 LoggedUserController luc = new LoggedUserController();
 			 loader.setController(luc);
@@ -66,8 +80,13 @@ public class GuiControllerLogin {
 		 else if (identity==2) {
 			 //artist selected
 			 Login lc = new Login();
-			 lc.setupSessionUser(identity, this.usernameTextField.getText(), this.passwordBox.getText());
-			 FXMLLoader loader=new FXMLLoader(getClass().getResource("/logic/view/viewprofile/ViewYourProfile.fxml"));
+			 try {
+				lc.setupCredentials(identity, this.usernameTextField.getText(), this.passwordBox.getText());
+			} catch (LoginException e) {
+				errorLabelLogin.setVisible(true);
+				e.printStackTrace();
+			} 
+			 FXMLLoader loader=new FXMLLoader(getClass().getResource("/logic/view/LoggedArtist.fxml"));
 			 LoggedArtistController lac = new LoggedArtistController();
 			 loader.setController(lac);
 			 Scene scene=this.usernameTextField.getScene();
@@ -76,8 +95,13 @@ public class GuiControllerLogin {
 		 else if (identity==3) {
 			 //sponsor selected
 			 Login lc = new Login();
-			 lc.setupSessionUser(identity, this.usernameTextField.getText(), this.passwordBox.getText());
-			 FXMLLoader loader=new FXMLLoader(getClass().getResource("/logic/view/editcommercialactivity/EditCommercialActivity.fxml"));
+			 try {
+				lc.setupCredentials(identity, this.usernameTextField.getText(), this.passwordBox.getText());
+			} catch (LoginException e) {
+				errorLabelLogin.setVisible(true);
+				e.printStackTrace();
+			}
+			 FXMLLoader loader=new FXMLLoader(getClass().getResource("/logic/view/LoggedSponsor.fxml"));
 			 LoggedSponsorController lsc = new LoggedSponsorController();
 			 loader.setController(lsc);
 			 Scene scene=this.usernameTextField.getScene();
@@ -88,9 +112,8 @@ public class GuiControllerLogin {
 	 @FXML
 	 public void caricaregistrazione() throws IOException {
 		 
-		 AnchorPane pane =FXMLLoader.load(getClass().getResource("/logic/boundary/Registrazione.fxml"));
+		 AnchorPane pane =FXMLLoader.load(getClass().getResource("/logic/view/login/Register.fxml"));
 		 loginroot.getChildren().setAll(pane);
-		  
 	 }
 	 
 	 
@@ -112,5 +135,10 @@ public class GuiControllerLogin {
 		 	typeMenuButton.setText("Standard User");
 		 	identity=1; //1 is for std user
 	    }
+
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		errorLabelLogin.setVisible(false);
+	}
 	
 }

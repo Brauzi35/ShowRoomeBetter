@@ -4,7 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import   logic.bean.RequestedShowBean;
+import logic.engclasses.bean.RequestedShowBean;
+
+
 
 public class DescriptionTest {
 

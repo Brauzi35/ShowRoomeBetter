@@ -15,7 +15,7 @@
    <children>
       <ImageView fitHeight="912.0" fitWidth="989.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-2.0" AnchorPane.topAnchor="-1.0">
          <image>
-            <Image url="@Location_map_Italy_Rome.png" />
+            <Image url="@../Location_map_Italy_Rome.png" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PURPLE" height="913.0" layoutX="821.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="12.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
@@ -23,7 +23,7 @@
          <graphic>
             <ImageView fitHeight="141.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@iconfinder_Facebook_UI-06_2344292%20(3).png" />
+                  <Image url="@../iconfinder_Facebook_UI-06_2344292%20(3).png" />
                </image>
             </ImageView>
          </graphic>
@@ -32,7 +32,7 @@
          <graphic>
             <ImageView fitHeight="141.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@iconfinder_Facebook_UI-06_2344292%20(3).png" />
+                  <Image url="@../iconfinder_Facebook_UI-06_2344292%20(3).png" />
                </image>
             </ImageView>
          </graphic>
@@ -41,7 +41,7 @@
          <graphic>
             <ImageView fitHeight="141.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@iconfinder_Facebook_UI-06_2344292%20(3).png" />
+                  <Image url="@../iconfinder_Facebook_UI-06_2344292%20(3).png" />
                </image>
             </ImageView>
          </graphic>
@@ -50,7 +50,7 @@
          <graphic>
             <ImageView fitHeight="141.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@iconfinder_Facebook_UI-06_2344292%20(3).png" />
+                  <Image url="@../iconfinder_Facebook_UI-06_2344292%20(3).png" />
                </image>
             </ImageView>
          </graphic>
