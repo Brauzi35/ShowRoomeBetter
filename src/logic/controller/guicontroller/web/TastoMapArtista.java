@@ -71,7 +71,7 @@ public class TastoMapArtista extends HttpServlet {
 			BookAPlaceAndCreateAnEvent mc = new BookAPlaceAndCreateAnEvent();
 			try {
 				
-					mc.submitEvent(name, place, desc);
+					mc.submitEvent(name, place, desc, control);
 				} catch (DescriptionTooLongException e) {
 					
 					e.printStackTrace();

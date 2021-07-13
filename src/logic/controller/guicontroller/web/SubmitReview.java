@@ -37,7 +37,7 @@ public class SubmitReview extends HttpServlet {
 		String artist = (String)session.getAttribute("artist2");
 		ReviewAnArtist rc = new ReviewAnArtist();
 		try {
-			rc.saveReview(artist, review);
+			rc.saveReview(artist, review, artist);
 		} catch (DuplicateReviewException e) {
 			e.printStackTrace();
 		}

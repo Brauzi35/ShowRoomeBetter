@@ -39,6 +39,11 @@ public class HostShowWebController extends HttpServlet {
 			RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/UserSponsoredEvents.jsp");
 			dispatcher2.forward(request, response);
 		}
+		else {
+			RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/RequestStatus.jsp");
+			dispatcher2.forward(request, response);
+			
+		}
 	}
 
 	
@@ -49,7 +54,7 @@ public class HostShowWebController extends HttpServlet {
 		
 		SponsorDao sd = new SponsorDao();
    	    try {
-			sd.createSSQueue(title, artist, "no", desc);
+			sd.createSSQueue(title, artist, "no", desc, desc);
 		} catch (PendingRequestException e) {
 			e.printStackTrace();
 		}

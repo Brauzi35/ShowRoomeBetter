@@ -29,7 +29,7 @@ public class Homepage extends HttpServlet {
 		Credentials cr = Credentials.getInstance();
 		if (cr.getId()==2){
 			ViewProfile hac = new ViewProfile();
-			hac.dismissLiveShow();
+			hac.dismissLiveShow(null);
 			//dynamic button hiding
 			HttpSession session = request.getSession();
 			session.setAttribute("Hosting", "noshow");
@@ -39,7 +39,7 @@ public class Homepage extends HttpServlet {
 		if (cr.getId()==3){
 			//sponsor
 			EditCommercialActivity hsc = new EditCommercialActivity();
-			hsc.delete();
+			hsc.delete(null);
 			//dynamic button hiding
 			HttpSession session = request.getSession();
 			session.setAttribute("HostingSponsor", "noshow");

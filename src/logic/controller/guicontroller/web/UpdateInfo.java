@@ -44,7 +44,7 @@ public class UpdateInfo extends HttpServlet {
 		String casella3post = request.getParameter("descrizione1");
 		
     if(controllo.equals("Salva")) {
-    			hac.updateProfile(casella2post, casella1post, casella3post);
+    			hac.updateProfile(casella2post, casella1post, casella3post, casella3post);
 	        	RequestDispatcher dispatcher1 = request.getRequestDispatcher("/WEB-INF/views/HomepageArtists.jsp");
 	            dispatcher1.forward(request, response);
 	    

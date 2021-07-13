@@ -41,7 +41,7 @@ public class RequestStatusController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HostPrivateShow rac = new HostPrivateShow();
-		rac.deleteRequest();
+		rac.deleteRequest(null);
 		RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/RequestStatus.jsp");
 		dispatcher2.forward(request, response);
 	}

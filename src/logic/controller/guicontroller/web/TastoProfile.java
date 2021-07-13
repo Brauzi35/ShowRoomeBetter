@@ -36,18 +36,18 @@ public class TastoProfile extends HttpServlet {
 		
 
 		Credentials crede =  Credentials.getInstance();
-		
+		System.out.println(crede.getId());
 		
 	    if (crede.getId()==2){
 	    RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/HomepageArtists.jsp");
 		dispatcher2.forward(request, response);
 	    }
-	    if (crede.getId()==2){
+	    if (crede.getId()==3){
 		    RequestDispatcher dispatcher3 = request.getRequestDispatcher("/WEB-INF/views/HomepageUsersSponsor.jsp");
 			dispatcher3.forward(request, response); 
 	    }
 	    else{
-		RequestDispatcher dispatcher1 = request.getRequestDispatcher("/WEB-INF/views/Profileusers.jsp");
+		RequestDispatcher dispatcher1 = request.getRequestDispatcher("/WEB-INF/views/HomepageUsersSponsor.jsp");
 	    dispatcher1.forward(request, response);
 		}
 		

@@ -58,7 +58,7 @@ public class LoginControllerWeb extends HttpServlet {
         if (id == 1) {
             try {
     			lc.setupCredentials(id, idUsername, idPassword);
-    			RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/HomepageUsers.jsp");
+    			RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/Map.jsp");
                 dispatcher2.forward(request, response);
     		} catch (Exception e) {
     			e.printStackTrace();
@@ -71,7 +71,7 @@ public class LoginControllerWeb extends HttpServlet {
 			HttpSession session = request.getSession();
 			session.setAttribute("Capienza", 0); //questo serve perchè altrimenti al primo avvio mapArtist va in errore
 			ViewProfile hac = new ViewProfile();
-			EventBean eb = hac.getLiveEventWeb(); // if the current artist is hosting any show eb won't be null
+			EventBean eb = hac.getLiveEventWeb(idTipoartista); // if the current artist is hosting any show eb won't be null
 		    if (eb != null) {
 		    	session.setAttribute("Hosting", eb.getName());
 		    }
