@@ -13,7 +13,7 @@ ViewProfile hac = new ViewProfile();
 	
 Credentials instanceA = Credentials.getInstance();
     String username = instanceA.getUsername();
-    EventBean eventname = hac.getLiveEventWeb();
+    EventBean eventname = hac.getLiveEvent(username);
 
  %>
 

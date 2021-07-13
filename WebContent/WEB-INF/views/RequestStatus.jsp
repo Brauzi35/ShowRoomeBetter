@@ -12,7 +12,7 @@
     String control = "ok"; 
     String state = "idle";
     try{
-    	rsb = rac.getPendingRequest();
+    	rsb = rac.getPendingRequest(username);
     	rsb.getApprovedArtist();
     } catch(Exception e){
     	control = "no";
