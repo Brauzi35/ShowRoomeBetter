@@ -4,8 +4,8 @@ import java.net.URL;
 
 public enum TypeException {
 	
-	TOOLONG(0, "/logic/view/exceptionswindows/ErrorDescriptionWindow.fxml"),
-	DOUBREV(1, "/logic/view/exceptionswindows/ErrorDoubleReview.fxml"),
+	TOOLONG(0, "/logic/view/exceptionswindows/ErrorDesc.fxml"),//cambiato
+	DOUBREV(1, "/logic/view/exceptionswindows/ErrorDoubReview.fxml"),
 	EMPTYF(2, "/logic/view/exceptionswindows/ErrorEmptyField.fxml"),
 	SSQUEUE(3,"/logic/view/exceptionswindows/ErrorSSQueue.fxml");
 	//logic\view\exceptionswindows\ErrorDescriptionWindow.fxml

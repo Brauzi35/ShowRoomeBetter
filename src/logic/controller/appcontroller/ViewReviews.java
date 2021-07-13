@@ -39,14 +39,12 @@ public class ViewReviews {
 		return lrb;
 	}
 	
-	public void saveReview(String artist, String review) throws DuplicateReviewException {
-		Credentials c = Credentials.getInstance();
-		//get the string "author" from the singleton class
+	public void saveReview(String usnm, String artist, String review) throws DuplicateReviewException {
 		ArtistDao ad = new ArtistDao();
 		Artist a = ad.getArtist(artist);
 		//these 2 lines check if the artist exist in the database
 		ReviewDao rd = new ReviewDao();
-		rd.submitReview(c.getUsername(), a.getUsername(), review);
+		rd.submitReview(usnm, a.getUsername(), review);
 	}
 	
 }

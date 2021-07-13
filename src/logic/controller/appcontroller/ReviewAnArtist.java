@@ -8,7 +8,6 @@ import logic.engclasses.dao.ArtistDao;
 import logic.engclasses.dao.ReviewDao;
 import logic.engclasses.exceptions.ArtistNotFoundException;
 import logic.engclasses.exceptions.DuplicateReviewException;
-import logic.engclasses.utils.Credentials;
 import logic.model.Artist;
 import logic.model.Review;
 
@@ -38,14 +37,13 @@ public class ReviewAnArtist {
 		return lrb;
 	}
 	
-	public void saveReview(String artist, String review) throws DuplicateReviewException {
-		Credentials c = Credentials.getInstance();
+	public void saveReview(String user, String artist, String review) throws DuplicateReviewException {
 		//get the string "author" from the singleton class
 		ArtistDao ad = new ArtistDao();
 		Artist a = ad.getArtist(artist);
 		//these 2 lines check if the artist exist in the database
 		ReviewDao rd = new ReviewDao();
-		rd.submitReview(c.getUsername(), a.getUsername(), review);
+		rd.submitReview(user, a.getUsername(), review);
 	}
 	
 }

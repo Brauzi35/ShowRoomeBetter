@@ -9,7 +9,6 @@ import logic.engclasses.dao.EventDao;
 import logic.engclasses.dao.PlaceDao;
 import logic.engclasses.exceptions.DescriptionTooLongException;
 import logic.engclasses.exceptions.EmptyFieldException;
-import logic.engclasses.utils.Credentials;
 import logic.model.Event;
 import logic.model.Place;
 
@@ -53,13 +52,11 @@ public class BookAPlaceAndCreateAnEvent {
 			return lpb;
 		}
 		
-		public void submitEvent(String name, String place, String description) throws EmptyFieldException, DescriptionTooLongException {
+		public void submitEvent(String artist, String name, String place, String description) throws EmptyFieldException, DescriptionTooLongException {
 			if(name.equals("") || description.equals("")) {
 				throw new EmptyFieldException("fill both description and title field");
 			}
-			String artist;
-			Credentials c = Credentials.getInstance();
-			artist=c.getUsername();
+			
 			EventDao ed = new EventDao();
 			ed.newEvent(name, artist, description, place);
 			

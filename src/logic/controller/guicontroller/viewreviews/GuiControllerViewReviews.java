@@ -12,13 +12,22 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import logic.controller.appcontroller.ViewReviews;
+import logic.engclasses.bean.LoggedBean;
 import logic.engclasses.bean.ReviewBean;
 import logic.engclasses.exceptions.ArtistNotFoundException;
-import logic.engclasses.utils.Credentials;
+import logic.engclasses.utils.Session;
 
 
 public class GuiControllerViewReviews implements Initializable{
 
+	protected Session bsvr;
+	protected LoggedBean lbvr;
+	 public GuiControllerViewReviews(Session bsvr){
+	 	this.bsvr = bsvr;
+	 	lbvr=bsvr.getLoggedBean();
+	 }
+	
+	
 	@FXML
     private AnchorPane rootpane5;
 
@@ -74,9 +83,8 @@ public class GuiControllerViewReviews implements Initializable{
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		reviewLabel.setWrapText(true); //this line makes text fit in a label
 		ViewReviews rc = new ViewReviews();
-		Credentials c = Credentials.getInstance();
 		try {
-			lrb = rc.getReviews(c.getUsername());
+			lrb = rc.getReviews(lbvr.getUsername());
 		} catch (ArtistNotFoundException e) {
 			//non si verifica mai durante un'esecuzione corretta
 			e.printStackTrace();

@@ -3,12 +3,13 @@ package logic.controller.appcontroller.login;
 
 import logic.engclasses.bean.ArtistBean;
 import logic.engclasses.bean.GeneralUserBean;
+import logic.engclasses.bean.LoggedBean;
 import logic.engclasses.bean.SponsorBean;
 import logic.engclasses.dao.ArtistDao;
 import logic.engclasses.dao.GeneralUserDao;
 import logic.engclasses.dao.SponsorDao;
 import logic.engclasses.exceptions.LoginException;
-import logic.engclasses.utils.Credentials;
+import logic.engclasses.utils.Session;
 import logic.model.Artist;
 import logic.model.GeneralUser;
 import logic.model.Sponsor;
@@ -21,7 +22,9 @@ public GeneralUserBean login(String username, String password) throws LoginExcep
 		
 		GeneralUserDao gud = new GeneralUserDao();
 		GeneralUser result = gud.login(username, password); //calls the dao login
-		
+		if(result==null) {
+			throw new LoginException("login ex");
+		}
 		
 		GeneralUserBean gu = new GeneralUserBean();
 		
@@ -32,11 +35,13 @@ public GeneralUserBean login(String username, String password) throws LoginExcep
 		return gu;
 	}
 	
-	public ArtistBean artistLogin(String username, String password){
+	public ArtistBean artistLogin(String username, String password) throws LoginException{
 		
 		ArtistDao ad = new ArtistDao();
 		Artist result = ad.artistLogin(username, password);
-		
+		if(result==null) {
+			throw new LoginException("wrong username and/or password");
+		}
 		ArtistBean ab = new ArtistBean();
 		ab.setUsername(result.getUsername());
 		ab.setPassword(result.getPassword());
@@ -64,25 +69,29 @@ public GeneralUserBean login(String username, String password) throws LoginExcep
 	
 	
 	
-	public void setupCredentials(int id, String username, String password) throws LoginException{
-		Credentials c = Credentials.getInstance();
-		if(id==1) {this.login(username, password);}
+	public Session setupCredentials(int id, String username, String password) throws LoginException{
+		LoggedBean s = new LoggedBean();
+		if(id==1) {
+			this.login(username, password);
+			}
 		if(id==2) {
 			ArtistBean ab = this.artistLogin(username, password);
-			c.setDescription(ab.getDescription());
-			c.setTalent(ab.getTalent());
-			c.setEmail(ab.getEmail());
+			s.setDescription(ab.getDescription());
+			s.setTalent(ab.getTalent());
+			s.setEmail(ab.getEmail());
 		}
 		if(id==3) {
 			SponsorBean sb = this.sponsorLogin(username, password);
-			c.setDescription(sb.getDescription());
-			c.setActivity(sb.getActivity());
-			c.setCapacity(sb.getCapacity());
+			s.setDescription(sb.getDescription());
+			s.setActivity(sb.getActivity());
+			s.setCapacity(sb.getCapacity());
 			
 		}
-		c.setId(id);
-		c.setUsername(username);
-		c.setPassword(password);
+		s.setId(id);
+		s.setUsername(username);
+		s.setPassword(password);
+		return (new Session(s,id));
+		
 	}
 	
 }

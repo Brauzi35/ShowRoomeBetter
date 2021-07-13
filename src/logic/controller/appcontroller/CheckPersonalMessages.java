@@ -14,11 +14,11 @@ import logic.model.Sponsor;
 
 public class CheckPersonalMessages {
 
-	public List<String> buildRequestsStringArray(){
+	public List<String> buildRequestsStringArray(String artist){
 		//this method builds the array needed for a listView gathering each pending request
 		List<String> requests = new ArrayList<>();
 		RequestsDao rd = new RequestsDao();
-		List<RequestedShow> ls = rd.getRequests();
+		List<RequestedShow> ls = rd.getRequests(artist);
 		if(ls == null) {
 			//if there are no requests
 			return requests;

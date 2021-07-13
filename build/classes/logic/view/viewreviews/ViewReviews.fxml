@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootpane5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controller.guicontroller.viewreviews.GuiControllerViewReviews">
+<AnchorPane fx:id="rootpane5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <AnchorPane fx:id="reviewsPane" layoutX="9.0" layoutY="12.0" prefHeight="553.0" prefWidth="1006.0" style="-fx-border-color: purple; -fx-border-radius: 10; -fx-border-width: 3;" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="12.0">
          <children>

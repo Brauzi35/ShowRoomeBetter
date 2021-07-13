@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootpane7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controller.guicontroller.checkpersonalmessages.GuiControllerCheckPersonalMessages">
+<AnchorPane fx:id="rootpane7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <Pane layoutX="19.0" layoutY="17.0" prefHeight="544.0" prefWidth="987.0" style="-fx-background-color: purple; -fx-background-radius: 20px20px20px20px; -fx-border-color: purple; -fx-border-radius: 20; -fx-border-width: 3;">
          <children>

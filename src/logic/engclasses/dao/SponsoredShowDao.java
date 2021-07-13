@@ -128,7 +128,7 @@ public class SponsoredShowDao {
 		
 	}
 	
-	public void dismissShow() {
+	public void dismissShow(String host) {
 		Statement stmtdss = null;
         Connection conndss = null;
         
@@ -143,8 +143,7 @@ public class SponsoredShowDao {
          // STEP 4.1: creazione ed esecuzione della query
             stmtdss = conndss.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY); 
-            Credentials c = Credentials.getInstance();
-            String host = c.getUsername();
+           
             String sql = "DELETE FROM sponsored_shows WHERE sponsor = '" +host+"'";
             stmtdss.executeUpdate(sql);
          // STEP 6: Clean-up dell'ambiente

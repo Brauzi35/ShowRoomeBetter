@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootpane5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controller.guicontroller.reviewanartist.GuiControllerReviewAnArtist">
+<AnchorPane fx:id="rootpane5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <TextField fx:id="research" layoutX="20.0" layoutY="14.0" prefHeight="25.0" prefWidth="902.0" promptText="search an artist, write the complete name" AnchorPane.bottomAnchor="537.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="14.0" />
       <AnchorPane fx:id="writingPane" layoutX="19.0" layoutY="55.0" prefHeight="305.0" prefWidth="992.0" style="-fx-background-color: white; -fx-border-color: purple; -fx-border-width: 3; -fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.bottomAnchor="215.66666666666669" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="55.0">

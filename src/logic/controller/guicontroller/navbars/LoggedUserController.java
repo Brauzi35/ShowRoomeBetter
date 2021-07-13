@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -17,11 +18,22 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import logic.controller.guicontroller.login.GuiControllerLogin;
+import logic.controller.guicontroller.reviewanartist.GuiControllerReviewAnArtist;
+import logic.engclasses.bean.LoggedBean;
 import logic.engclasses.utils.Credentials;
+import logic.engclasses.utils.Session;
 
 
 
-public class LoggedUserController implements Initializable {
+public class LoggedUserController implements Initializable{
+	
+	protected Session bs;
+	protected LoggedBean lb;
+	 public LoggedUserController(Session bs){
+	 	this.bs = bs;
+	 	lb=bs.getLoggedBean();
+	 }
+	 
 	
 
 	@FXML
@@ -92,8 +104,9 @@ public class LoggedUserController implements Initializable {
     void caricamappa(MouseEvent event) {
     	//map button action
     	try {
-	 		AnchorPane barrafiltra = FXMLLoader.load(getClass().getResource("/logic/view/findliveevent/FindLiveEvent.fxml"));
-	 		rootpane3.getChildren().setAll(barrafiltra);
+    		FXMLLoader loader0=new FXMLLoader(getClass().getResource("/logic/view/findliveevent/FindLiveEvent.fxml"));
+    		AnchorPane mappa = loader0.load();
+	 		rootpane3.getChildren().setAll(mappa);
 	 		rootpaneLong.setMaxHeight(1000);
 			rootpaneLong.setPrefHeight(1000);
 			rootpaneLong.setMinHeight(1000);
@@ -106,7 +119,10 @@ public class LoggedUserController implements Initializable {
     void carirecensioni(MouseEvent event) {
     	//reviews button action
     	try {
-	 		AnchorPane barrafiltra = FXMLLoader.load(getClass().getResource("/logic/view/reviewanartist/ReviewAnArtist.fxml"));	
+    		FXMLLoader loader1=new FXMLLoader(getClass().getResource("/logic/view/reviewanartist/ReviewAnArtist.fxml"));
+    		GuiControllerReviewAnArtist gra = new GuiControllerReviewAnArtist(bs);
+	 		loader1.setController(gra);
+	 		AnchorPane barrafiltra = loader1.load();
 	 		rootpane3.getChildren().setAll(barrafiltra);
 	 		rootpaneLong.setMaxHeight(barrafiltra.getHeight());
 			rootpaneLong.setPrefHeight(barrafiltra.getHeight());
@@ -120,6 +136,7 @@ public class LoggedUserController implements Initializable {
     void carisettings(MouseEvent event) {
     	//setting button action
     	try {
+    		
 	 		AnchorPane barrafiltra = FXMLLoader.load(getClass().getResource("/logic/boundary/SponsoredShowsUser.fxml"));
 	 		rootpane3.getChildren().setAll(barrafiltra);
 	 		rootpaneLong.setMaxHeight(barrafiltra.getHeight());
@@ -149,8 +166,7 @@ public class LoggedUserController implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		Credentials c = Credentials.getInstance();
-		usernameLabel.setText(c.getUsername());
+		usernameLabel.setText(lb.getUsername());
 		//gianmattia
     	 rootpane0.setVisible(false);
     	 rootpane2.setVisible(false);

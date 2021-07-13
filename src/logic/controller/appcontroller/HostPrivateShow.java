@@ -9,7 +9,6 @@ import logic.engclasses.dao.RequestsDao;
 import logic.engclasses.dao.SponsorDao;
 import logic.engclasses.dao.SponsoredShowDao;
 import logic.engclasses.exceptions.DescriptionTooLongException;
-import logic.engclasses.utils.Credentials;
 import logic.model.Artist;
 import logic.model.RequestedShow;
 import logic.model.Sponsor;
@@ -40,7 +39,7 @@ public class HostPrivateShow {
 		
 	}
 	
-	public List<String> buildSponsorStringArray(){
+	public List<String> buildSponsorStringArray(String sponsor){
 		//this method provides a string array which contains every sponsor username except for the sessionSponsor's one
 		List<String> sponsors = new ArrayList<>();
 		SponsorDao sd = new SponsorDao();
@@ -50,17 +49,16 @@ public class HostPrivateShow {
 			sponsors.add(x);//building reviewBean list
 		}
 		//given the full list now the sessionSponsor username has to be removed
-		Credentials c = Credentials.getInstance();
-		sponsors.remove(c.getUsername());
+		sponsors.remove(sponsor);
 		
 		return sponsors;
 		
 	}
 	
-	public RequestedShowBean getPendingRequest() {
+	public RequestedShowBean getPendingRequest(String host) {
 		RequestedShowBean result = new RequestedShowBean();
 		RequestsDao rd = new RequestsDao();
-		RequestedShow rs = rd.getQueuedShow();
+		RequestedShow rs = rd.getQueuedShow(host);
 		if(rs!=null) {
 			result.setHost(rs.getHost());
 			result.setTitle(rs.getTitle());
@@ -85,12 +83,12 @@ public class HostPrivateShow {
 			//implementare controllo errore
 			e.printStackTrace();
 		}
-		this.deleteRequest();
+		this.deleteRequest(sponsor);
 	}
 	
-	public void deleteRequest() {
+	public void deleteRequest(String host) {
 		RequestsDao rd = new RequestsDao();
-		rd.deleteRequest();
+		rd.deleteRequest(host);
 	}
 	
 }

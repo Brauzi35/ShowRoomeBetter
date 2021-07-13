@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootpane7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #aaa6bf;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controller.guicontroller.viewprofile.GuiControllerViewYourProfile">
+<AnchorPane fx:id="rootpane7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #aaa6bf;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <Pane layoutX="19.0" layoutY="41.0" prefHeight="111.0" prefWidth="987.0" style="-fx-background-color: purple; -fx-background-radius: 20px20px20px20px;">
          <children>

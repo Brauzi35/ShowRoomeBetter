@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootpane3" prefHeight="910.0" prefWidth="1259.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.controller.guicontroller.bookplaceandcreateevent.ControllerGuiBookAPlaceAndCreateAnEvent">
+<AnchorPane fx:id="rootpane3" prefHeight="910.0" prefWidth="1259.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <ImageView fitHeight="912.0" fitWidth="989.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-2.0" AnchorPane.topAnchor="-1.0">
          <image>

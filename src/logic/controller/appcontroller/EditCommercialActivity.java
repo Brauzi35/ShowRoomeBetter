@@ -4,9 +4,9 @@ import logic.engclasses.dao.SponsoredShowDao;
 
 public class EditCommercialActivity {
 
-	public void delete() {
+	public void delete(String host) {
 		SponsoredShowDao ssd = new SponsoredShowDao();
-		ssd.dismissShow();
+		ssd.dismissShow(host);
 	}
 	
 }

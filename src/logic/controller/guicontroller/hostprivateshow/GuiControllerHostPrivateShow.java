@@ -16,14 +16,23 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import logic.controller.appcontroller.HostPrivateShow;
+import logic.engclasses.bean.LoggedBean;
 import logic.engclasses.dao.SponsorDao;
 import logic.engclasses.exceptions.ExceptionView;
 import logic.engclasses.exceptions.PendingRequestException;
 import logic.engclasses.utils.ExceptionFactory;
+import logic.engclasses.utils.Session;
 import logic.engclasses.utils.TypeException;
 
 
 public class GuiControllerHostPrivateShow implements Initializable {
+	
+	protected Session bsps;
+	protected LoggedBean lbps;
+	 public GuiControllerHostPrivateShow(Session bsps){
+	 	this.bsps = bsps;
+	 	lbps=bsps.getLoggedBean();
+	 }
 	
 	@FXML
     private AnchorPane rootpane5;
@@ -64,11 +73,11 @@ public class GuiControllerHostPrivateShow implements Initializable {
    	 String partner = partnerLabel.getText();
    	 SponsorDao sd = new SponsorDao();
    	 try {
-			sd.createSSQueue(title, artist, partner, description);
+			sd.createSSQueue(lbps.getUsername(), title, artist, partner, description);
 		} catch (PendingRequestException e) {
 			ExceptionFactory exf = ExceptionFactory.getInstance();
 			ExceptionView ev;
-			ev = exf.createView(TypeException.EMPTYF);
+			ev = exf.createView(TypeException.SSQUEUE);
 			rootpane5.getChildren().setAll(ev.getRoot());
 		}
 	    }
@@ -91,7 +100,7 @@ public class GuiControllerHostPrivateShow implements Initializable {
 			
 		});
 		//fill listViewSponsor
-		listViewSponsor.getItems().addAll(hssc.buildSponsorStringArray());
+		listViewSponsor.getItems().addAll(hssc.buildSponsorStringArray(lbps.getUsername()));
 		listViewSponsor.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
 
 			@Override

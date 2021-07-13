@@ -10,13 +10,21 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import logic.controller.appcontroller.HostPrivateShow;
+import logic.engclasses.bean.LoggedBean;
 import logic.engclasses.bean.RequestedShowBean;
-import logic.engclasses.utils.Credentials;
+import logic.engclasses.utils.Session;
 
 
 
 public class GuiControllerRequestsSponsor implements Initializable{
 
+	protected Session bsrs;
+	protected LoggedBean lbrs;
+	 public GuiControllerRequestsSponsor(Session bsrs){
+	 	this.bsrs = bsrs;
+	 	lbrs=bsrs.getLoggedBean();
+	 }
+	
 	@FXML
     private AnchorPane rootpane5;
 
@@ -77,8 +85,7 @@ public class GuiControllerRequestsSponsor implements Initializable{
     		partner=partnerLabel.getText();
     	}
     	HostPrivateShow rac = new HostPrivateShow();
-    	Credentials c = Credentials.getInstance();
-    	rac.hostSponsoredShow(titleLabel.getText(), artistLabel.getText(), c.getUsername(), c.getActivity(), c.getCapacity(), partner, descriptionShowLabel.getText());
+    	rac.hostSponsoredShow(titleLabel.getText(), artistLabel.getText(), lbrs.getUsername(), lbrs.getActivity(), lbrs.getCapacity(), partner, descriptionShowLabel.getText());
     }
 
 	@Override
@@ -99,7 +106,7 @@ public class GuiControllerRequestsSponsor implements Initializable{
 		partnerLabel.setVisible(false);
 		HostPrivateShow rss = new HostPrivateShow();
 		
-		RequestedShowBean rsb = rss.getPendingRequest();
+		RequestedShowBean rsb = rss.getPendingRequest(lbrs.getUsername());
 		
 		if (rsb!=null) {
 			

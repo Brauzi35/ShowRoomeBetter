@@ -9,11 +9,10 @@ import logic.model.Event;
 
 public class ViewProfile {
 
-	public EventBean getLiveEvent() {
+	public EventBean getLiveEvent(String username) {
 		EventBean eb = new EventBean();
 		EventDao ed = new EventDao();
-		Credentials c = Credentials.getInstance();
-		Event e=ed.getEvent(c.getUsername()); //get artist from the singleton class which is built during the login
+		Event e=ed.getEvent(username); //get artist from the singleton class which is built during the login
 		if(e!=null) {
 			eb.setArtist(e.getArtist());
 			eb.setDescription(e.getDescription());
@@ -24,11 +23,10 @@ public class ViewProfile {
 		else {return null;}
 	}
 	
-	public EventBean getLiveEventWeb() {
+	public EventBean getLiveEventWeb(String uname) {
 		EventBean eb = new EventBean();
 		EventDao ed = new EventDao();
-		Credentials c = Credentials.getInstance();
-		Event e=ed.getEvent(c.getUsername()); //get artist from the singleton class which is built during the login
+		Event e=ed.getEvent(uname); //get artist from the singleton class which is built during the login
 		if(e!=null) {
 			eb.setArtist(e.getArtist());
 			eb.setDescription(e.getDescription());
@@ -39,23 +37,20 @@ public class ViewProfile {
 		else {return null;}
 	}
 	
-	public void dismissLiveShow() {
+	public void dismissLiveShow(String username) {
 		//to delete the current show the system needs to gather the artist's username, delete the row in the db and update the "free" field in the right row of the table "places"
-		String artist;
-		Credentials c = Credentials.getInstance();
-		artist=c.getUsername();
+		
 		EventDao ed = new EventDao();
-		Event e = ed.getEvent(artist);
+		Event e = ed.getEvent(username);
 		ed.deleteLiveEvent(e.getName());
 		PlaceDao pd = new PlaceDao();
 		pd.setBooked(e.getPlace(), ""); 
 	}
 	
-	public void updateProfile(String email, String talent, String description) {
+	public void updateProfile(String usernm, String email, String talent, String description) {
 		//saves the changes to the artist profile
-		Credentials c = Credentials.getInstance();
 		ArtistDao ad = new ArtistDao();
-		ad.updateArtist(c.getUsername(), email, talent, description);
+		ad.updateArtist(usernm, email, talent, description);
 	}
 	
 }

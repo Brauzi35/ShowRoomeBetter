@@ -11,12 +11,23 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import logic.engclasses.utils.Credentials;
+import logic.controller.appcontroller.EditCommercialActivity;
+import logic.engclasses.bean.LoggedBean;
+import logic.engclasses.utils.Session;
 
 
 
 public class GuiControllerEditCommercialActivity implements Initializable{
-	 @FXML
+	 	
+		
+	protected Session bsea;
+	protected LoggedBean lbea;
+	 public GuiControllerEditCommercialActivity(Session bsea){
+	 	this.bsea = bsea;
+	 	lbea=bsea.getLoggedBean();
+	 }
+		
+		@FXML
 	    private AnchorPane rootpaneHPS;
 	    
 	    @FXML
@@ -58,6 +69,8 @@ public class GuiControllerEditCommercialActivity implements Initializable{
 	    @FXML
 	    void dismissShow(ActionEvent event) {
 	    	//add dismiss show
+	    	EditCommercialActivity eca = new EditCommercialActivity();
+	    	eca.delete(lbea.getUsername());
 	    }
 
 	    @FXML
@@ -91,12 +104,10 @@ public class GuiControllerEditCommercialActivity implements Initializable{
 			saveButton.setVisible(false);
 			descriptionTexrBar.setVisible(false);
 			capacityEditbox.setVisible(false);
-			//implement a singleton class for sponsors (SessionSponsor)
 			
-			Credentials c = Credentials.getInstance();
-			usernameHPS.setText(c.getUsername());
-			activity.setText(c.getActivity());
-			capacity.setText(c.getCapacity());
-			description.setText(c.getDescription());
+			usernameHPS.setText(lbea.getUsername());
+			activity.setText(lbea.getActivity());
+			capacity.setText(lbea.getCapacity());
+			description.setText(lbea.getDescription());
 		}
 }

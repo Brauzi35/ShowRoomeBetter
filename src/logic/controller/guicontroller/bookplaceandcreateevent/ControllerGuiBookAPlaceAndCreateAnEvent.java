@@ -16,15 +16,26 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import logic.controller.appcontroller.BookAPlaceAndCreateAnEvent;
+import logic.engclasses.bean.LoggedBean;
 import logic.engclasses.bean.PlaceBean;
 import logic.engclasses.exceptions.DescriptionTooLongException;
 import logic.engclasses.exceptions.EmptyFieldException;
 import logic.engclasses.exceptions.ExceptionView;
 import logic.engclasses.utils.ExceptionFactory;
+import logic.engclasses.utils.Session;
 import logic.engclasses.utils.TypeException;
 
 
+
 public class ControllerGuiBookAPlaceAndCreateAnEvent implements Initializable{
+	
+	protected Session bsCr;
+	protected LoggedBean lbCr;
+	 public ControllerGuiBookAPlaceAndCreateAnEvent(Session bsCr){
+	 	this.bsCr = bsCr;
+	 	lbCr=bsCr.getLoggedBean();
+	 }
+	
 	
 	@FXML
     private AnchorPane rootpane3;
@@ -99,7 +110,7 @@ public class ControllerGuiBookAPlaceAndCreateAnEvent implements Initializable{
     void submit(ActionEvent event) throws EmptyFieldException, IOException {
     	//this method creates a new event based on the information gathered
     	try {
-			mc.submitEvent(titleText.getText(), nameLabelArt.getText(), descriptionText.getText());
+			mc.submitEvent(lbCr.getUsername() ,titleText.getText(), nameLabelArt.getText(), descriptionText.getText());
 		} catch (EmptyFieldException e) {
 			ExceptionFactory ef = ExceptionFactory.getInstance();
 			ExceptionView view;

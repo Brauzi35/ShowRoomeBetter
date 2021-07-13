@@ -15,10 +15,19 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import logic.controller.appcontroller.ViewProfile;
 import logic.engclasses.bean.EventBean;
-import logic.engclasses.utils.Credentials;
+import logic.engclasses.bean.LoggedBean;
+import logic.engclasses.utils.Session;
 
 
 public class GuiControllerViewYourProfile implements Initializable {
+	
+	protected Session bs1;
+	protected LoggedBean lb1;
+	 public GuiControllerViewYourProfile(Session bs1){
+	 	this.bs1 = bs1;
+	 	lb1=bs1.getLoggedBean();
+	 }
+	
 	@FXML
     private AnchorPane rootpane7;
 
@@ -76,7 +85,7 @@ public class GuiControllerViewYourProfile implements Initializable {
     void dismissShow(ActionEvent event) {
     	//by clicking this button an artist can dismiss the hosted show
     	ViewProfile hac = new ViewProfile();
-    	hac.dismissLiveShow();
+    	hac.dismissLiveShow(lb1.getUsername());
     }
 
     @FXML
@@ -101,7 +110,7 @@ public class GuiControllerViewYourProfile implements Initializable {
     void saveClick(ActionEvent event) {
     	//this method calls the update 
     	ViewProfile hac = new ViewProfile();
-    	hac.updateProfile(passwordEditbox1.getText(), changeTalent, descriptionTexrBar.getText());
+    	hac.updateProfile(lb1.getUsername() , passwordEditbox1.getText(), changeTalent, descriptionTexrBar.getText());
     	
     }
 
@@ -119,15 +128,13 @@ public class GuiControllerViewYourProfile implements Initializable {
 		talentMenubar.setVisible(false);
 		saveButton.setVisible(false);
 		descriptionTexrBar.setVisible(false);
-		//implement a singleton class to update lables 
-		Credentials c = Credentials.getInstance();
-		username.setText(c.getUsername());
-		email.setText(c.getEmail());
-		talent.setText(c.getTalent());
-		description.setText(c.getDescription());
+		username.setText(lb1.getUsername());
+		email.setText(lb1.getEmail());
+		talent.setText(lb1.getTalent());
+		description.setText(lb1.getDescription());
 		//the following lines manage the live event section
 		ViewProfile hac = new ViewProfile();
-		EventBean eb = hac.getLiveEvent(); // if the current artist is hosting any show eb won't be null
+		EventBean eb = hac.getLiveEvent(lb1.getUsername()); // if the current artist is hosting any show eb won't be null
 		if (eb!=null) {
 			titleLabel.setText(eb.getName());
 		}

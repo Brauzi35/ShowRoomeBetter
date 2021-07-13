@@ -9,17 +9,33 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import logic.controller.guicontroller.bookplaceandcreateevent.ControllerGuiBookAPlaceAndCreateAnEvent;
+import logic.controller.guicontroller.checkpersonalmessages.GuiControllerCheckPersonalMessages;
 import logic.controller.guicontroller.login.GuiControllerLogin;
+import logic.controller.guicontroller.reviewanartist.GuiControllerReviewAnArtist;
+import logic.controller.guicontroller.viewprofile.GuiControllerViewYourProfile;
+import logic.controller.guicontroller.viewreviews.GuiControllerViewReviews;
+import logic.engclasses.bean.LoggedBean;
+import logic.engclasses.utils.Session;
 
 
 public class LoggedArtistController implements Initializable{
-    @FXML
+    
+	protected Session bs2;
+	protected LoggedBean lb2;
+	 public LoggedArtistController(Session bs2){
+	 	this.bs2 = bs2;
+	 	lb2=bs2.getLoggedBean();
+	 }
+	
+	@FXML
     private Button logoutArtist;
     
     @FXML
@@ -40,18 +56,26 @@ public class LoggedArtistController implements Initializable{
     @FXML
     void homepageClick(MouseEvent event) throws IOException {
     	//home button action
-    	AnchorPane ap = FXMLLoader.load(getClass().getResource("/logic/view/viewprofile/ViewYourProfile.fxml"));
-    	longPane.setMaxHeight(ap.getHeight());
+    	
+ 		
+ 		FXMLLoader loader01=new FXMLLoader(getClass().getResource("/logic/view/viewprofile/ViewYourProfile.fxml"));
+		GuiControllerViewYourProfile gvp1 = new GuiControllerViewYourProfile(bs2);
+ 		loader01.setController(gvp1);
+ 		AnchorPane ap = loader01.load();
+		longPane.setMaxHeight(ap.getHeight());
 		longPane.setPrefHeight(ap.getHeight());
 		longPane.setMinHeight(ap.getHeight());
- 		rootpane3.getChildren().setAll(ap);
+		rootpane3.getChildren().setAll(ap);
     }
 
     @FXML
     void mapClick(MouseEvent event) {
     	//map button action
     	try {
-	 		AnchorPane ap = FXMLLoader.load(getClass().getResource("/logic/view/bookplaceandcreateevent/BookPlaceAndCreateEvent.fxml"));		
+    		FXMLLoader loader02=new FXMLLoader(getClass().getResource("/logic/view/bookplaceandcreateevent/BookPlaceAndCreateEvent.fxml"));
+    		ControllerGuiBookAPlaceAndCreateAnEvent cgbp = new ControllerGuiBookAPlaceAndCreateAnEvent(bs2);
+    		loader02.setController(cgbp);
+	 		AnchorPane ap = loader02.load();		
 	 		longPane.setMaxHeight(1000);
 			longPane.setPrefHeight(1000);
 			longPane.setMinHeight(1000);
@@ -77,7 +101,10 @@ public class LoggedArtistController implements Initializable{
     void reviewClick(MouseEvent event) {
     	//review button action
     	try {
-	 		AnchorPane ap = FXMLLoader.load(getClass().getResource("/logic/view/viewreviews/ViewReviews.fxml"));			
+    		FXMLLoader loader03=new FXMLLoader(getClass().getResource("/logic/view/viewreviews/ViewReviews.fxml"));
+    		GuiControllerViewReviews gcvr = new GuiControllerViewReviews(bs2);
+    		loader03.setController(gcvr);
+	 		AnchorPane ap = loader03.load();
 	 		longPane.setMaxHeight(ap.getHeight());
 			longPane.setPrefHeight(ap.getHeight());
 			longPane.setMinHeight(ap.getHeight());
@@ -91,7 +118,10 @@ public class LoggedArtistController implements Initializable{
     void settingsClick(MouseEvent event) {
     	//settings is the wrong name , this loads the request page
     	try {
-	 		AnchorPane ap = FXMLLoader.load(getClass().getResource("/logic/view/checkpersonalmessages/CheckPersonalMessages.fxml"));		
+    		FXMLLoader loader04=new FXMLLoader(getClass().getResource("/logic/view/checkpersonalmessages/CheckPersonalMessages.fxml"));
+    		GuiControllerCheckPersonalMessages gcpm = new GuiControllerCheckPersonalMessages(bs2);
+    		loader04.setController(gcpm);
+	 		AnchorPane ap = loader04.load();		
 	 		longPane.setMaxHeight(ap.getHeight());
 			longPane.setPrefHeight(ap.getHeight());
 			longPane.setMinHeight(ap.getHeight());
@@ -104,14 +134,13 @@ public class LoggedArtistController implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
    	 rootpane0.setVisible(true);
-		 AnchorPane homepageview;
+		
 			try {
-				homepageview = FXMLLoader.load(getClass().getResource("/logic/view/viewprofile/ViewYourProfile.fxml"));
-				longPane.setMaxHeight(homepageview.getHeight());
-				longPane.setPrefHeight(homepageview.getHeight());
-				longPane.setMinHeight(homepageview.getHeight());
-				rootpane3.getChildren().setAll(homepageview);
-				rootpane3.setLayoutY(126);
+				FXMLLoader loader0=new FXMLLoader(getClass().getResource("/logic/view/viewprofile/ViewYourProfile.fxml"));
+	    		GuiControllerViewYourProfile gvp = new GuiControllerViewYourProfile(bs2);
+		 		loader0.setController(gvp);
+		 		Parent root = loader0.load();
+				rootpane3.getChildren().setAll(root);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}			

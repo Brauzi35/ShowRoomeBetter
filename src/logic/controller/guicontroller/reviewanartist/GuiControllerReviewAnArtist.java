@@ -15,16 +15,25 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import logic.controller.appcontroller.ReviewAnArtist;
+import logic.engclasses.bean.LoggedBean;
 import logic.engclasses.bean.ReviewBean;
 import logic.engclasses.exceptions.ArtistNotFoundException;
 import logic.engclasses.exceptions.DuplicateReviewException;
 import logic.engclasses.exceptions.ExceptionView;
 import logic.engclasses.utils.ExceptionFactory;
+import logic.engclasses.utils.Session;
 import logic.engclasses.utils.TypeException;
 
 
 public class GuiControllerReviewAnArtist implements Initializable{
 
+	protected Session s;
+	protected LoggedBean b;
+	 public GuiControllerReviewAnArtist(Session s){
+	 	this.s = s;
+	 	b=s.getLoggedBean();
+	 }
+	
 	//non uso più vedirecensioni e recensioni scritte
 		 @FXML
 		    private AnchorPane rootpane5;
@@ -137,7 +146,7 @@ public class GuiControllerReviewAnArtist implements Initializable{
 		    	else {
 		    		ReviewAnArtist rc = new ReviewAnArtist();
 		    		try {
-						rc.saveReview( artistText.getText(), textArea.getText());
+						rc.saveReview(b.getUsername(), artistText.getText(), textArea.getText());
 					} catch (DuplicateReviewException e) {
 						ExceptionFactory eff = ExceptionFactory.getInstance();
 						ExceptionView v;

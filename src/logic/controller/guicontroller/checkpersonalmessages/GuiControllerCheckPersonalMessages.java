@@ -14,11 +14,20 @@ import javafx.scene.control.ListView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import logic.controller.appcontroller.CheckPersonalMessages;
+import logic.engclasses.bean.LoggedBean;
 import logic.engclasses.bean.RequestedShowBean;
 import logic.engclasses.bean.SponsorBean;
+import logic.engclasses.utils.Session;
 
 public class GuiControllerCheckPersonalMessages implements Initializable{
 
+	protected Session bspm;
+	protected LoggedBean lbpm;
+	 public GuiControllerCheckPersonalMessages(Session bspm){
+	 	this.bspm = bspm;
+	 	lbpm=bspm.getLoggedBean();
+	 }
+	
 	@FXML
     private AnchorPane rootpane7;
 
@@ -97,12 +106,12 @@ public class GuiControllerCheckPersonalMessages implements Initializable{
 		this.setInvisible();
 		//initialize the listview
 		CheckPersonalMessages rac = new CheckPersonalMessages();
-		if(rac.buildRequestsStringArray().isEmpty()) {
+		if(rac.buildRequestsStringArray(lbpm.getUsername()).isEmpty()) {
 			//if there are no requests
 			norequestsPane.setVisible(true);
 		}
 		else {
-			listViewRequests.getItems().addAll(rac.buildRequestsStringArray());
+			listViewRequests.getItems().addAll(rac.buildRequestsStringArray(lbpm.getUsername()));
 			listViewRequests.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
 
 				@Override

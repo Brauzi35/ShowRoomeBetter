@@ -10,7 +10,7 @@
          <children>
             <AnchorPane layoutX="20.0" layoutY="55.0" prefHeight="452.0" prefWidth="966.0" style="-fx-border-color: purple; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-color: purple; -fx-background-radius: 10;">
                <children>
-                  <Label alignment="CENTER" layoutX="118.0" layoutY="128.0" prefHeight="195.0" prefWidth="729.0" text="Couldn't elaborate your request, please retry" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="118.0" layoutY="128.0" prefHeight="195.0" prefWidth="729.0" text="You have already reviewed this artist" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="System Bold" size="37.0" />
                      </font>

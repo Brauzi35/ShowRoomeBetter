@@ -22,6 +22,7 @@ import logic.controller.guicontroller.navbars.LoggedArtistController;
 import logic.controller.guicontroller.navbars.LoggedSponsorController;
 import logic.controller.guicontroller.navbars.LoggedUserController;
 import logic.engclasses.exceptions.LoginException;
+import logic.engclasses.utils.Session;
 
 
 public class GuiControllerLogin implements Initializable {
@@ -63,15 +64,16 @@ public class GuiControllerLogin implements Initializable {
 		 else if (identity==1) {
 			 //std user selected
 			 Login lc = new Login();
+			 Session ses = null;
 			 try {
-				lc.setupCredentials(identity, this.usernameTextField.getText(), this.passwordBox.getText());
+				ses=lc.setupCredentials(identity, this.usernameTextField.getText(), this.passwordBox.getText());
 			} catch (LoginException e) {
 				errorLabelLogin.setVisible(true);
 				e.printStackTrace();
 			} 
 		 	
 			 FXMLLoader loader=new FXMLLoader(getClass().getResource("/logic/view/LoggedUser.fxml"));
-			 LoggedUserController luc = new LoggedUserController();
+			 LoggedUserController luc = new LoggedUserController(ses);
 			 loader.setController(luc);
 			 Scene scene=this.usernameTextField.getScene();
 			 scene.setRoot(loader.load());
@@ -80,14 +82,15 @@ public class GuiControllerLogin implements Initializable {
 		 else if (identity==2) {
 			 //artist selected
 			 Login lc = new Login();
+			 Session se = null;
 			 try {
-				lc.setupCredentials(identity, this.usernameTextField.getText(), this.passwordBox.getText());
+				se=lc.setupCredentials(identity, this.usernameTextField.getText(), this.passwordBox.getText());
 			} catch (LoginException e) {
 				errorLabelLogin.setVisible(true);
 				e.printStackTrace();
 			} 
 			 FXMLLoader loader=new FXMLLoader(getClass().getResource("/logic/view/LoggedArtist.fxml"));
-			 LoggedArtistController lac = new LoggedArtistController();
+			 LoggedArtistController lac = new LoggedArtistController(se);
 			 loader.setController(lac);
 			 Scene scene=this.usernameTextField.getScene();
 			 scene.setRoot(loader.load());
@@ -95,14 +98,15 @@ public class GuiControllerLogin implements Initializable {
 		 else if (identity==3) {
 			 //sponsor selected
 			 Login lc = new Login();
+			 Session s = null;
 			 try {
-				lc.setupCredentials(identity, this.usernameTextField.getText(), this.passwordBox.getText());
+				s=lc.setupCredentials(identity, this.usernameTextField.getText(), this.passwordBox.getText());
 			} catch (LoginException e) {
 				errorLabelLogin.setVisible(true);
 				e.printStackTrace();
 			}
 			 FXMLLoader loader=new FXMLLoader(getClass().getResource("/logic/view/LoggedSponsor.fxml"));
-			 LoggedSponsorController lsc = new LoggedSponsorController();
+			 LoggedSponsorController lsc = new LoggedSponsorController(s);
 			 loader.setController(lsc);
 			 Scene scene=this.usernameTextField.getScene();
 			 scene.setRoot(loader.load());
