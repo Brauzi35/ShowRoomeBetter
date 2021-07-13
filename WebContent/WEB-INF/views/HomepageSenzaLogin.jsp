@@ -22,7 +22,7 @@
         
       </form>
       <form action="TastoMap" method="post">
-        <p style="margin-top:-74px;margin-left:-170px;"><input id="Submit" name="Map" type="submit" value="Map"  style="height: 35px ; width: 95px; margin-top: -48px; margin-left: 570px;color:white; background-color: #4D4D4D;"></input>
+        <p style="margin-top:-74px;margin-left:-170px;"><input id="Submit" name="Map" type="submit" value="Homepage"  style="height: 35px ; width: 95px; margin-top: -48px; margin-left: 570px;color:white; background-color: #4D4D4D;"></input>
         </p>
       </form>
       <form action="Homepage" method="post">

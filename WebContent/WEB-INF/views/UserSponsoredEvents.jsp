@@ -55,22 +55,21 @@ for (int i=0; i<titles.size(); i++){
 
 
        </h1>
-     <h1 style="margin-top:84px;margin-left:3px;">
+    
+    <h1 style="margin-top:84px;margin-left:3px;">
      
       <form action="TastoChart" method="post">
-        <p style="margin-top:-74px;margin-left:170px;"><input id="Submit" name="Chart" type="submit" value="Chart" " style="height: 35px ; width: 95px; margin-top: -48px; margin-left: 570px;background-color: #4D4D4D;"></input>
+        <p style="margin-top:-74px;margin-left:170px;"><input id="Submit" name="Chart" type="submit" value="Chart" " style="height: 35px ; width: 95px; margin-top: -48px; margin-left: 400px;background-color: #4D4D4D;"></input>
         </p>
       </form>
       <form action="TastoMap" method="post">
-        <p style="margin-top:-74px;margin-left:-170px;"><input id="Submit" name="Map" type="submit" value="Map"  style="height: 35px ; width: 95px; margin-top: -48px; margin-left: 570px;background-color: #4D4D4D;"></input>
+        <p style="margin-top:-74px;margin-left:-170px;"><input id="Submit" name="Map" type="submit" value="Homepage"  style="height: 35px ; width: 95px; margin-top: -48px; margin-left: 220px; background-color: #4D4D4D;"></input>
         </p>
       </form>
-      <form action="Homepage" method="post">
-        <p style="margin-top:-74px;margin-left:-555px;"><input id="Submit" type="submit" name="Homepage" value="Homepage" style="height: 35px ; width: 95px; margin-top: -46px; margin-left: 570px; background-color: #4D4D4D;"></input>
-        </p>
+      
       </form>
       <form action="HostShowWebController" method="get">
-        <p style="margin-top:-74px;margin-left:937px;"><input id="Submit" type="submit" name="Setting" value="Sponsored" style="height: 35px ; width: 95px; margin-top: -48px; margin-left: 210px;color: white; background-color: #4D4D4D;"></input></p>
+        <p style="margin-top:-74px;margin-left:937px;"><input id="Submit" type="submit" name="Setting" value="Sponsored" style="height: 35px ; width: 95px; margin-top: -48px; margin-left: 175px;color:white;background-color: #4D4D4D;"></input></p>
       </form>
     </h1>
     <h1 style="margin-top: -74px;margin-left:px ;background-color: white;">
