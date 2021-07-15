@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 
 
 import logic.controller.appcontroller.ReviewAnArtist;
+import logic.engclasses.bean.LoggedBean;
 import logic.engclasses.exceptions.DuplicateReviewException;
+import logic.engclasses.utils.Session;
 
 
 @WebServlet("/SubmitReview")
@@ -33,14 +35,17 @@ public class SubmitReview extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String review = request.getParameter("story");
-		HttpSession session = request.getSession();
-		String artist = (String)session.getAttribute("artist2");
+		HttpSession sessionsr = request.getSession();
+		String artist = (String)sessionsr.getAttribute("artist2");
+		Session ssr = (Session)sessionsr.getAttribute("session");
+		LoggedBean lbsr = ssr.getLoggedBean();
 		ReviewAnArtist rc = new ReviewAnArtist();
 		try {
-			rc.saveReview(artist, review, artist);
+			rc.saveReview(lbsr.getUsername() , artist, review);
 		} catch (DuplicateReviewException e) {
 			e.printStackTrace();
 		}
+		sessionsr.setAttribute("session", ssr);
 		RequestDispatcher dispatcher4 = request.getRequestDispatcher("/WEB-INF/views/Search.jsp");
 	    dispatcher4.forward(request, response);
 	}

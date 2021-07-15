@@ -4,14 +4,16 @@
    <%@page import = "logic.controller.appcontroller.FindLiveEvent"  %>
    <%@page import = "logic.engclasses.bean.ArtistBean"  %>
     <%@ page import = "java.util.List" %>
-        <%@page import = "logic.engclasses.utils.Credentials"  %>
+       <%@page import = "logic.engclasses.utils.Session"  %>
+    <%@page import = " logic.engclasses.bean.LoggedBean" %>
     
    
     <%
+    Session smhs = (Session)session.getAttribute("session");
+	LoggedBean ss = smhs.getLoggedBean();
     HostPrivateShow hssc = new HostPrivateShow();
     List<String> artists = hssc.buildArtistStringArray();
     FindLiveEvent huc = new FindLiveEvent();
-    Credentials ss = Credentials.getInstance();
 	String username = ss.getUsername();
     %>
   

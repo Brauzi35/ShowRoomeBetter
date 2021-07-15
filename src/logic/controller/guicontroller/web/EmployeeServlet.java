@@ -24,7 +24,7 @@ public class EmployeeServlet extends HttpServlet {
 		session.setAttribute("Capienza", 0); //questo serve perchè altrimenti al primo avvio mapArtist va in errore
 		
 	   
-		    RequestDispatcher dispatcher1 = request.getRequestDispatcher("/WEB-INF/views/Login.jsp");
+		    RequestDispatcher dispatcher1 = request.getRequestDispatcher("/WEB-INF/views/Login.jsp"); //"/WEB-INF/views/Login.jsp"  "Login.jsp"
 		    dispatcher1.forward(request, response);
 	    
 	    

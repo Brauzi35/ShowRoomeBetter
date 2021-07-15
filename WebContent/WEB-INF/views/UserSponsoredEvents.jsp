@@ -3,16 +3,17 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%> 
     <%@page import = " logic.engclasses.bean.SponsoredShowBean" %>
-    <%@page import = " logic.engclasses.appcontroller.SSUserController" %>
+
     <%@ page import = "java.util.List" %>
      <%@ page import = "java.util.ArrayList" %>
-         <%@page import = " logic.utils.SessionUser" %>
+<%@page import = "logic.engclasses.utils.Session"  %>
+    <%@page import = " logic.engclasses.bean.LoggedBean" %>
      
 <%
-SSUserController ssuc = new SSUserController();
-SessionUser su = SessionUser.getInstance();
-String username = su.getUsername();
-List<String> titles = ssuc.buildShowStringArray();
+Session sma = (Session)session.getAttribute("session");
+LoggedBean lbma = sma.getLoggedBean();
+String username = lbma.getUsername();
+List<String> titles =  null;  //ssuc.buildShowStringArray();
 String empty = "no";
 try{
 	titles.get(0);
@@ -24,8 +25,8 @@ try{
 List<SponsoredShowBean> lssb = new ArrayList<>();
 if(empty != "yes"){
 for (int i=0; i<titles.size(); i++){
-	SponsoredShowBean ssb = ssuc.getSponsoredShow(titles.get(i));
-	lssb.add(ssb);
+	//SponsoredShowBean ssb = ssuc.getSponsoredShow(titles.get(i));
+	//lssb.add(ssb);
 
  }
 }

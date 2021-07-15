@@ -9,7 +9,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -20,7 +19,6 @@ import javafx.stage.Stage;
 import logic.controller.guicontroller.login.GuiControllerLogin;
 import logic.controller.guicontroller.reviewanartist.GuiControllerReviewAnArtist;
 import logic.engclasses.bean.LoggedBean;
-import logic.engclasses.utils.Credentials;
 import logic.engclasses.utils.Session;
 
 

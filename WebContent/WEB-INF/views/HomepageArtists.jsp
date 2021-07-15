@@ -2,7 +2,8 @@
     pageEncoding="ISO-8859-1"%>
 
 
-<%@page import = "logic.engclasses.utils.Credentials"  %>
+<%@page import = " logic.engclasses.utils.Session" %>
+<%@page import = " logic.engclasses.bean.LoggedBean" %>
 <%@page import = "logic.controller.appcontroller.ViewProfile"  %>
 <%@page import = "logic.engclasses.bean.EventBean" %>
 
@@ -11,8 +12,9 @@
 ViewProfile hac = new ViewProfile();
     
 	
-Credentials instanceA = Credentials.getInstance();
-    String username = instanceA.getUsername();
+	Session sha = (Session)session.getAttribute("session");
+	LoggedBean lbha = sha.getLoggedBean();
+    String username = lbha.getUsername();
     EventBean eventname = hac.getLiveEvent(username);
 
  %>
@@ -80,28 +82,28 @@ Credentials instanceA = Credentials.getInstance();
                              <button name="Dona" style="height: 35px; width: 90px; margin-top: -200px; margin-left:75px; background-color: #4d4d4d;"id="modifica" onClick="modifica()">Modifica</button>
       
         <form action="UpdateInfo" method="post" style="margin-top: 10px;">
-          <input disabled="true"value=<%= instanceA.getUsername() %> id="Nome" name="Nome" style="height: 25px; width: 225px;"
+          <input disabled="true"value=<%= lbha.getUsername() %> id="Nome" name="Nome" style="height: 25px; width: 225px;"
 
  
 
             type="text">
         </ul>
         <ul>
-          <input disabled="true" value=<%= instanceA.getTalent() %> id="talent1" name="talent1"
+          <input disabled="true" value=<%= lbha.getTalent() %> id="talent1" name="talent1"
 
  
 
             style="height: 25px; width: 225px;" type="text">
         </ul>
         <ul>
-          <input disabled="true" value=<%= instanceA.getEmail() %> id="email1" name="email1"
+          <input disabled="true" value=<%= lbha.getEmail() %> id="email1" name="email1"
 
  
 
             style="height: 25px; width: 225px;" type="text"></input>
             
         </ul>
-         <input disabled="true" value=<%= instanceA.getDescription() %> id="descrizione1" name="descrizione1"
+         <input disabled="true" value=<%= lbha.getDescription() %> id="descrizione1" name="descrizione1"
 
  
 
@@ -115,13 +117,13 @@ Credentials instanceA = Credentials.getInstance();
     
               <input  type="submit" disabled="true"  value ="Salva"  name="Salva" id="Salva" style="height: 35px; width: 90px; margin-top: 30px; margin-left:550px; background-color: #4d4d4d;"id="salva" ></button>
             
-              <input  value=<%= instanceA.getEmail() %> id="email" name="email"
+              <input  value=<%= lbha.getEmail() %> id="email" name="email"
 
             style="height: 25px; width: 225px;margin-left:40px;display:none;" type="text"></input>
-              <input  value=<%= instanceA.getTalent()%> id="talent" name="talent"
+              <input  value=<%= lbha.getTalent()%> id="talent" name="talent"
 
             style="height: 25px; width: 225px;margin-left:40px;display:none;" type="text"></input>
-              <input  value=<%= instanceA.getDescription() %> id="descrizione" name="descrizione"
+              <input  value=<%= lbha.getDescription() %> id="descrizione" name="descrizione"
 
             style="height: 25px; width: 225px;margin-left:40px;display:none;" type="text"></input>
             

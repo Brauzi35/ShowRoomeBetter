@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import logic.engclasses.exceptions.DescriptionTooLongException;
-import logic.engclasses.utils.Credentials;
 import logic.model.SponsoredShow;
 
 

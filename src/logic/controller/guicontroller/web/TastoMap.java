@@ -12,7 +12,8 @@ import javax.servlet.http.HttpSession;
 
 import logic.controller.appcontroller.FindLiveEvent;
 import logic.engclasses.bean.EventBean;
-import logic.engclasses.utils.Credentials;
+import logic.engclasses.bean.LoggedBean;
+import logic.engclasses.utils.Session;
 
 
 /**
@@ -22,9 +23,9 @@ import logic.engclasses.utils.Credentials;
 public class TastoMap extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     String tipoutente;
-    Credentials cred =  Credentials.getInstance();
+    
 	String message ="there is no show here";
-	 String mapartistjsp = "/WEB-INF/views/MapArtist.jsp";
+	static String mapartistjsp = "/WEB-INF/views/MapArtist.jsp";
 	int ringbell = 0;
 	
     public TastoMap() {
@@ -41,7 +42,8 @@ public class TastoMap extends HttpServlet {
         List<EventBean> leb = mc.liveEventsList();
         
         HttpSession session = request.getSession();
-        
+        Session stm = (Session) session.getAttribute("session");
+        LoggedBean lbtm = stm.getLoggedBean();
         //ringbell is the variable that serves to understand if the targetted show is live
         
         for(int i=0; i<leb.size(); i++) {
@@ -58,13 +60,13 @@ public class TastoMap extends HttpServlet {
     		session.setAttribute("mapArtist", message);
     		session.setAttribute("mapDescription",message);
         }
-        
+        session.setAttribute("session", stm);
         ringbell=0;
-        if(cred.getId()==2) {
+        if(lbtm.getId()==2) {
         	RequestDispatcher dispatcherN = request.getRequestDispatcher(mapartistjsp);
         	dispatcherN.forward(request, response);
         }
-        if(cred.getId()==3) {
+        if(lbtm.getId()==3) {
         	RequestDispatcher dispatcherM = request.getRequestDispatcher(mapartistjsp);
         	dispatcherM.forward(request, response);
         }
@@ -77,13 +79,15 @@ public class TastoMap extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		 HttpSession session1 = request.getSession();
+	        Session stm1 = (Session) session1.getAttribute("session");
+	        LoggedBean lbtm1 = stm1.getLoggedBean();
 		
-		
-	    if (cred.getId()==2){
+	    if (lbtm1.getId()==2){
 	    RequestDispatcher dispatcher2 = request.getRequestDispatcher(mapartistjsp);
 		dispatcher2.forward(request, response);
 	    }
-	    if (cred.getId()==3){
+	    if (lbtm1.getId()==3){
 		    RequestDispatcher dispatcher3 = request.getRequestDispatcher("/WEB-INF/views/Homepagesponsor.jsp");
 			dispatcher3.forward(request, response); 
 	    }

@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 
-import static org.junit.Assert.*;
+
 
 public class TestSelenium2 {
    public static void main(String[] args) {

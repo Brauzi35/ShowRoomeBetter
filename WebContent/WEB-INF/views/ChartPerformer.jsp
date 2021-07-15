@@ -3,16 +3,19 @@
     <%@page import = "logic.controller.appcontroller.ViewReviews"%>
     <%@page import = "logic.engclasses.bean.ReviewBean"%>
     <%@ page import = "java.util.List" %>
-    <%@page import = "logic.engclasses.utils.Credentials"  %>
+    <%@page import = "logic.engclasses.utils.Session"  %>
+    <%@page import = " logic.engclasses.bean.LoggedBean" %>
 
     
     <%
     ViewReviews rc = new ViewReviews();
     
     String control = "ok";
-    Credentials instanceA = Credentials.getInstance();
-    List<ReviewBean> lrb =rc.getReviews(instanceA.getUsername());
-    String username = instanceA.getUsername();
+    Session sma = (Session)session.getAttribute("session");
+	LoggedBean lbma = sma.getLoggedBean();
+    String username = lbma.getUsername();
+    List<ReviewBean> lrb =rc.getReviews(username);
+    
     %>
     
 <!DOCTYPE html>

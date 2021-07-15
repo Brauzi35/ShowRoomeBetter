@@ -15,5 +15,8 @@ public class Session {
 		return loggedbean;
 	}
 	
+	public int getId() {
+		return id;
+	}
 	
 }

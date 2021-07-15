@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%> 
-    <%@page import = "logic.engclasses.utils.Credentials"  %>
+    <%@page import = "logic.engclasses.utils.Session"  %>
+    <%@page import = " logic.engclasses.bean.LoggedBean" %>
  
  <%
  
-	Credentials ss = Credentials.getInstance();
+ 	Session smhs = (Session)session.getAttribute("session");
+	LoggedBean ss = smhs.getLoggedBean();
 	String username = ss.getUsername();
 	String activity = ss.getActivity();
 	String capacity = ss.getCapacity();

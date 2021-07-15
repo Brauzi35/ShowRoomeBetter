@@ -3,7 +3,8 @@
     <%@page import = "logic.controller.appcontroller.ReviewAnArtist"  %>
     <%@page import = "logic.engclasses.bean.ReviewBean"%>
     <%@ page import = "java.util.List" %>
-    <%@page import = " logic.engclasses.utils.Credentials" %>
+    <%@page import = " logic.engclasses.utils.Session" %>
+    <%@page import = " logic.engclasses.bean.LoggedBean" %>
     
     <%
 
@@ -13,8 +14,9 @@
     String review1 = "";
     String review2 = "";
     String review3= "";
-    Credentials su = Credentials.getInstance();
-    String username = su.getUsername();
+    Session ch = (Session)session.getAttribute("session");
+    LoggedBean lbch = ch.getLoggedBean();
+    String username = lbch.getUsername();
     %>
 <!DOCTYPE html>
 <html  lang="it">

@@ -1,13 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-        <%@page import = " logic.engclasses.utils.Credentials" %>
+        <%@page import = " logic.engclasses.utils.Session" %>
+        <%@page import = " logic.engclasses.bean.LoggedBean" %>
     
     <%
     String place = (String)session.getAttribute("mapPlace");
     String artist = (String)session.getAttribute("mapArtist");
     String description = (String)session.getAttribute("mapDescription");
-    Credentials su = Credentials.getInstance();
-    String username = su.getUsername();
+    Session sm = (Session)session.getAttribute("session");
+    LoggedBean lbm = sm.getLoggedBean();
+    String username = lbm.getUsername();
     %>
     
 <!DOCTYPE html>

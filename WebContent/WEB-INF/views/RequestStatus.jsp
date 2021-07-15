@@ -2,11 +2,13 @@
     pageEncoding="ISO-8859-1"%> 
     <%@page import = "logic.controller.appcontroller.HostPrivateShow"  %>
     <%@page import = "logic.engclasses.bean.RequestedShowBean"  %>
-        <%@page import = "logic.engclasses.utils.Credentials"  %>
+    <%@page import = "logic.engclasses.utils.Session"  %>
+    <%@page import = " logic.engclasses.bean.LoggedBean" %>
     
     <%
     HostPrivateShow rac = new HostPrivateShow();
-    Credentials ss = Credentials.getInstance();
+    Session smhs = (Session)session.getAttribute("session");
+	LoggedBean ss = smhs.getLoggedBean();
 	String username = ss.getUsername();
     RequestedShowBean rsb = null;
     String control = "ok"; 

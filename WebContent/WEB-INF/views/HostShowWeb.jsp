@@ -1,11 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%> 
-            <%@page import = "logic.engclasses.utils.Credentials"  %>
+            <%@page import = "logic.engclasses.utils.Session"  %>
+    <%@page import = " logic.engclasses.bean.LoggedBean" %>
     
     <%
     String artist = (String)session.getAttribute("artistNameSponsor");
-    Credentials ss = Credentials.getInstance();
-   	String username = ss.getUsername();
+    Session smhs = (Session)session.getAttribute("session");
+	LoggedBean ss = smhs.getLoggedBean();
+	String username = ss.getUsername();
     %>
  
 <!DOCTYPE html>

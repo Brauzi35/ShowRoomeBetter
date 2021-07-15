@@ -17,6 +17,8 @@ import javax.servlet.http.HttpSession;
 import logic.controller.appcontroller.ViewProfile;
 import logic.controller.appcontroller.login.Login;
 import logic.engclasses.bean.EventBean;
+import logic.engclasses.exceptions.LoginException;
+import logic.engclasses.utils.Session;
 
  
 
@@ -53,13 +55,25 @@ public class LoginControllerWeb extends HttpServlet {
         String idUsername = request.getParameter("username");
         String idPassword = request.getParameter("password");
         String idTipoartista = request.getParameter("tipoutente");
+        Session s;
         int id = Integer.parseInt(idTipoartista);
         Login lc = new Login();
+        HttpSession session = request.getSession();
+        try {
+        	s = lc.setupCredentials(id, idUsername, idPassword);
+			
+        	session.setAttribute("session", s);
+		} catch (LoginException e1) {
+			
+			e1.printStackTrace();
+		}
+		
         if (id == 1) {
             try {
-    			lc.setupCredentials(id, idUsername, idPassword);
+    			
     			RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/Map.jsp");
                 dispatcher2.forward(request, response);
+               
     		} catch (Exception e) {
     			e.printStackTrace();
     		}
@@ -67,11 +81,10 @@ public class LoginControllerWeb extends HttpServlet {
         
         if (id == 2) {
         try {
-			lc.setupCredentials(id, idUsername, idPassword);
-			HttpSession session = request.getSession();
+        
 			session.setAttribute("Capienza", 0); //questo serve perchè altrimenti al primo avvio mapArtist va in errore
 			ViewProfile hac = new ViewProfile();
-			EventBean eb = hac.getLiveEventWeb(idTipoartista); // if the current artist is hosting any show eb won't be null
+			EventBean eb = hac.getLiveEventWeb(idUsername); // if the current artist is hosting any show eb won't be null
 		    if (eb != null) {
 		    	session.setAttribute("Hosting", eb.getName());
 		    }
@@ -87,7 +100,7 @@ public class LoginControllerWeb extends HttpServlet {
         
         if (id == 3) {
             try {
-    			lc.setupCredentials(id, idUsername, idPassword);
+            	
     			RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/Homepagesponsor.jsp");
                 dispatcher2.forward(request, response);
     		} catch (Exception e) {

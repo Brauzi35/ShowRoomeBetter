@@ -8,8 +8,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import logic.controller.appcontroller.ViewProfile;
+import logic.engclasses.bean.LoggedBean;
+import logic.engclasses.utils.Session;
 
 
 
@@ -44,7 +47,10 @@ public class UpdateInfo extends HttpServlet {
 		String casella3post = request.getParameter("descrizione1");
 		
     if(controllo.equals("Salva")) {
-    			hac.updateProfile(casella2post, casella1post, casella3post, casella3post);
+    	HttpSession sessio = request.getSession();
+		Session se3 = (Session)sessio.getAttribute("session");
+		LoggedBean cre = se3.getLoggedBean();
+    			hac.updateProfile(cre.getUsername() , casella2post, casella1post, casella3post);
 	        	RequestDispatcher dispatcher1 = request.getRequestDispatcher("/WEB-INF/views/HomepageArtists.jsp");
 	            dispatcher1.forward(request, response);
 	    

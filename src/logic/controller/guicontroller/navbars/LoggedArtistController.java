@@ -19,7 +19,6 @@ import javafx.stage.Stage;
 import logic.controller.guicontroller.bookplaceandcreateevent.ControllerGuiBookAPlaceAndCreateAnEvent;
 import logic.controller.guicontroller.checkpersonalmessages.GuiControllerCheckPersonalMessages;
 import logic.controller.guicontroller.login.GuiControllerLogin;
-import logic.controller.guicontroller.reviewanartist.GuiControllerReviewAnArtist;
 import logic.controller.guicontroller.viewprofile.GuiControllerViewYourProfile;
 import logic.controller.guicontroller.viewreviews.GuiControllerViewReviews;
 import logic.engclasses.bean.LoggedBean;

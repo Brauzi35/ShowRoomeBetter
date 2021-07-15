@@ -7,8 +7,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import logic.engclasses.utils.Credentials;
+import logic.engclasses.bean.LoggedBean;
+import logic.engclasses.utils.Session;
+
 
 /**
  * Servlet implementation class TastoProfile
@@ -34,9 +37,11 @@ public class TastoProfile extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-
-		Credentials crede =  Credentials.getInstance();
-		System.out.println(crede.getId());
+		HttpSession session = request.getSession();
+		//non uso la bean
+		Session screde = (Session)session.getAttribute("session");
+		LoggedBean crede = screde.getLoggedBean();
+		
 		
 	    if (crede.getId()==2){
 	    RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/HomepageArtists.jsp");
@@ -47,7 +52,7 @@ public class TastoProfile extends HttpServlet {
 			dispatcher3.forward(request, response); 
 	    }
 	    else{
-		RequestDispatcher dispatcher1 = request.getRequestDispatcher("/WEB-INF/views/HomepageUsersSponsor.jsp");
+		RequestDispatcher dispatcher1 = request.getRequestDispatcher("/WEB-INF/views/Profileusers.jsp");
 	    dispatcher1.forward(request, response);
 		}
 		

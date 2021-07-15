@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import logic.engclasses.utils.Credentials;
+import logic.engclasses.bean.LoggedBean;
+import logic.engclasses.utils.Session;
 
   
 
@@ -31,20 +32,26 @@ public class TastoChart extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		artist = request.getParameter("artist");
 		HttpSession session = request.getSession();
+		Session stc = (Session) session.getAttribute("session");
 		session.setAttribute("artist2", artist);
+		session.setAttribute("session", stc);
 		RequestDispatcher dispatcher4 = request.getRequestDispatcher("/WEB-INF/views/Chart.jsp");
 	    dispatcher4.forward(request, response);
 
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Credentials cre =  Credentials.getInstance();
+		HttpSession session2 = request.getSession();
+		Session stc2 = (Session) session2.getAttribute("session");
+		LoggedBean lbtc2 = stc2.getLoggedBean();
+
+		session2.setAttribute("session", stc2);
 		
-	    if (cre.getId()==2){
+	    if (lbtc2.getId()==2){
 	    RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/ChartPerformer.jsp");
 		dispatcher2.forward(request, response);
 	    }
-	    if (cre.getId()==3){
+	    if (lbtc2.getId()==3){
 		    RequestDispatcher dispatcher3 = request.getRequestDispatcher("/WEB-INF/views/Homepagesponsor.jsp");
 			dispatcher3.forward(request, response); 
 	    }

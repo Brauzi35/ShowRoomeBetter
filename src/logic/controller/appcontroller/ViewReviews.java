@@ -8,7 +8,6 @@ import logic.engclasses.dao.ArtistDao;
 import logic.engclasses.dao.ReviewDao;
 import logic.engclasses.exceptions.ArtistNotFoundException;
 import logic.engclasses.exceptions.DuplicateReviewException;
-import logic.engclasses.utils.Credentials;
 import logic.model.Artist;
 import logic.model.Review;
 

@@ -8,9 +8,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import logic.controller.appcontroller.HostPrivateShow;
-import logic.engclasses.utils.Credentials;
+import logic.engclasses.bean.LoggedBean;
+import logic.engclasses.utils.Session;
+
 
 
 /**
@@ -30,8 +33,10 @@ public class RequestStatusController extends HttpServlet {
 		String description = request.getParameter("desc");
 		String artist = request.getParameter("artist");
 		HostPrivateShow rac = new HostPrivateShow();
-    	Credentials instance = Credentials.getInstance();
-    	rac.hostSponsoredShow(title, artist, instance.getUsername(), instance.getActivity(), instance.getCapacity(), "no", description);
+		HttpSession session11 = request.getSession();
+		Session s53 = (Session)session11.getAttribute("session");
+		LoggedBean lb53 = s53.getLoggedBean();
+    	rac.hostSponsoredShow(title, artist, lb53.getUsername(), lb53.getActivity(), lb53.getCapacity(), "no", description);
     	RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/RequestStatus.jsp");
 		dispatcher2.forward(request, response);
 	}
@@ -41,7 +46,10 @@ public class RequestStatusController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HostPrivateShow rac = new HostPrivateShow();
-		rac.deleteRequest(null);
+		HttpSession session19 = request.getSession();
+		Session s59 = (Session)session19.getAttribute("session");
+		LoggedBean lb59 = s59.getLoggedBean();
+		rac.deleteRequest(lb59.getUsername());
 		RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/RequestStatus.jsp");
 		dispatcher2.forward(request, response);
 	}

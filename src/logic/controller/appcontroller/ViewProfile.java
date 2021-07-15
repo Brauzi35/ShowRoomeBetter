@@ -4,7 +4,6 @@ import logic.engclasses.bean.EventBean;
 import logic.engclasses.dao.ArtistDao;
 import logic.engclasses.dao.EventDao;
 import logic.engclasses.dao.PlaceDao;
-import logic.engclasses.utils.Credentials;
 import logic.model.Event;
 
 public class ViewProfile {

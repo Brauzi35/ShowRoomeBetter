@@ -13,9 +13,11 @@ import javax.servlet.http.HttpSession;
 
 
 import logic.controller.appcontroller.BookAPlaceAndCreateAnEvent;
+import logic.engclasses.bean.LoggedBean;
 import logic.engclasses.bean.PlaceBean;
 import logic.engclasses.exceptions.DescriptionTooLongException;
 import logic.engclasses.exceptions.EmptyFieldException;
+import logic.engclasses.utils.Session;
 
 
 @WebServlet("/TastoMapArtista")
@@ -47,7 +49,8 @@ public class TastoMapArtista extends HttpServlet {
 		List<PlaceBean> freePlaces = mc.freePlaces();
 		
 		HttpSession session = request.getSession();
-		
+		Session stma = (Session)session.getAttribute("session");
+		LoggedBean lbtma = stma.getLoggedBean();
 		for(int i=0; i<freePlaces.size(); i++) {
         	if(freePlaces.get(i).getName().equals(value)) {
         		session.setAttribute("Posto", freePlaces.get(i).getName());
@@ -65,13 +68,15 @@ public class TastoMapArtista extends HttpServlet {
 		ringbell=0;
 		RequestDispatcher dispatcherN = request.getRequestDispatcher( mapartistjsp);
     	dispatcherN.forward(request, response);
-	}
+		}
 		
 		else {
 			BookAPlaceAndCreateAnEvent mc = new BookAPlaceAndCreateAnEvent();
 			try {
-				
-					mc.submitEvent(name, place, desc, control);
+				HttpSession session2 = request.getSession();
+				Session stma2 = (Session)session2.getAttribute("session");
+				LoggedBean lbtma2 = stma2.getLoggedBean();
+					mc.submitEvent(lbtma2.getUsername() ,name, place, desc);
 				} catch (DescriptionTooLongException e) {
 					
 					e.printStackTrace();

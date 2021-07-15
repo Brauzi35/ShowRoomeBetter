@@ -3,15 +3,18 @@
     <%@page import = "logic.controller.appcontroller.CheckPersonalMessages"  %>
     <%@page import = "logic.engclasses.bean.RequestedShowBean"  %>
     <%@ page import = "java.util.List" %>
-            <%@page import = "logic.engclasses.utils.Credentials"  %>
+    <%@page import = "logic.engclasses.utils.Session"  %>
+    <%@page import = " logic.engclasses.bean.LoggedBean" %>
     
     <%
     CheckPersonalMessages rac = new CheckPersonalMessages();	
-    List<String> list = rac.buildRequestsStringArray();
+    
     String state = "good";
     RequestedShowBean show = null;
-    Credentials instanceA = Credentials.getInstance();
-    String username = instanceA.getUsername();
+    Session sar = (Session)session.getAttribute("session");
+	LoggedBean lbar = sar.getLoggedBean();
+    String username = lbar.getUsername();
+    List<String> list = rac.buildRequestsStringArray(username);
     try{
     	show = rac.getRequestedShowBean(list.get(0));
        } catch (Exception e){
