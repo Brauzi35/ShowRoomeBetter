@@ -30,22 +30,24 @@ public class TastoChart extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String s = "session";
 		artist = request.getParameter("artist");
 		HttpSession session = request.getSession();
-		Session stc = (Session) session.getAttribute("session");
+		Session stc = (Session) session.getAttribute(s);
 		session.setAttribute("artist2", artist);
-		session.setAttribute("session", stc);
+		session.setAttribute(s, stc);
 		RequestDispatcher dispatcher4 = request.getRequestDispatcher("/WEB-INF/views/Chart.jsp");
 	    dispatcher4.forward(request, response);
 
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String s2 = "session";
 		HttpSession session2 = request.getSession();
-		Session stc2 = (Session) session2.getAttribute("session");
+		Session stc2 = (Session) session2.getAttribute(s2);
 		LoggedBean lbtc2 = stc2.getLoggedBean();
 
-		session2.setAttribute("session", stc2);
+		session2.setAttribute(s2, stc2);
 		
 	    if (lbtc2.getId()==2){
 	    RequestDispatcher dispatcher2 = request.getRequestDispatcher("/WEB-INF/views/ChartPerformer.jsp");

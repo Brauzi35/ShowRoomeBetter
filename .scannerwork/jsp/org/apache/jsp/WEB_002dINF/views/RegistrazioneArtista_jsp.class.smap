@@ -1,0 +1,15 @@
+SMAP
+RegistrazioneArtista_jsp.java
+JSP
+*S JSP
+*F
++ 0 RegistrazioneArtista.jsp
+WEB-INF/views/RegistrazioneArtista.jsp
+*L
+2,2:116,0
+4,2:118
+5,37:120,0
+41:122
+41:124
+42,38:125,0
+*E

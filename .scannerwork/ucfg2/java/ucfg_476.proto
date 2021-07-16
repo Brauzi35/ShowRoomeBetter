@@ -1,0 +1,269 @@
+
+àorg.apache.jsp.WEB_002dINF.views.Login_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)VÄ
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaO O("31*ö
+24Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.java_ _(4¬
+ø
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.java_ _(4,
+pageContextjavax.servlet.jsp.PageContext"__id*
+""∏
+µ
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javac c(+"
+outjavax.servlet.jsp.JspWriter"__id*
+""æ
+ª
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javae e(1(
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*
+""…
+∆
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaf f(<3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*
+""*
+23*æ	
+25Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaY Y(˚¯
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaY Y(>
+
+%9void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)†
+ù
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaZ Z(D
+
+%10int"__id*
+""ÖÇ
+Å
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaZ Z(à
+%11void"Fjavax.servlet.http.HttpServletResponse#sendError(ILjava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*
+
+
+%10int*CA
+?JSPs only permit GET, POST or HEAD. Jasper also permits OPTIONS2sendError(ILjava/lang/String;)"ã
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.java[ [(
+""*°
+26Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaXJ X(Pçä
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaXJ X(e
+%8boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+HEAD*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+24
+25*°
+27Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaX* X(0çä
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaX* X(E
+%7boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+POST*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+24
+26*∑
+16Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javau u(	®
+•
+
+Å
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javau u(±
+%20void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*•¢
+ü\r\n \r\n\r\n        <option value='1'>User</option>\r\n\r\n \r\n\r\n        <option value='2'>Performer</option>\r\n     <option value='3'>Sponsor</option>\r\n\r\n\r\n        \r\n \r\n\r\n    </select>\r\n    \r\n\r\n \r\n\r\n   \r\n\r\n \r\n\r\n    <p style=\"height: 35px; width: 90px; margin-top: -20px; margin-left:220px;\">\r\n      <input type=\"submit\" name=\"login\" value=\"login\" style=\"height: 35px; width: 90px; margin-top: -130px; margin-left:443px; background-color: #4d4d4d;\"></input>\r\n      </p>\r\n      </form>\r\n    <form action=\"RegisterController\" method=\"get\">\r\n      <button name=\"register\" style=\"height: 35px; width: 90px; margin-top: 20px; margin-left: 595px; background-color: #4d4d4d;\">Registrati</button></form>\r\n    <form action=\"LoginControllerWeb\" method=\"get\">\r\n      <button name=\"Informazioni\" style=\"height: 35px; width: 90px; margin-top: 20px; margin-left: 595px; background-color: #4d4d4d;\">Continua\r\n        senza login</button></form>\r\n    \r\n    \r\n \r\n  </body>\r\n</html>\r\n2write(Ljava/lang/String;)*
+1*†
+28Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaX X(åâ
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaX X(%
+%6boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+GET*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+24
+27*ˇ
+17Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaq q( ÷
+”
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaq q( "
+outjavax.servlet.jsp.JspWriter"__id*$
+"
+%18javax.servlet.jsp.JspWriter‹
+Ÿ
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javar r((
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*$
+"
+outjavax.servlet.jsp.JspWriter∑¥
+b
+XC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Login.jsp O(
+%19void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*‘	—	
+Œ	\r\n<!DOCTYPE html>\r\n\r\n<html  lang=\"it\">\r\n  <head>\r\n    <title>ShoowRome</title>\r\n\t<body>\r\n\t<style>\r\nbody {\r\n  background-image: url('https://github.com/Brauzi35/ShowRoome-ISPW2021/blob/main/Immagini/Header.jpg?raw=true');\r\n}\r\n</style>\r\n  </head>\r\n    <h1 style=\"margin-top: px; margin-left: 115px;\"> ShowRoome </h1>\r\n    <p style=\"margin-top: -60px; margin-left: 115px;\"> </p>\r\n    <h3 style=\" margin-top: 150px;margin-left: 480px;\">\r\n     <form action=\"LoginControllerWeb\" method=\"post\">\r\n      <ul>\r\n        <input  value=\"Nome Utente\" id=\"username\" name=\"username\" style=\"height: 25px; width: 225px;\"\r\n\r\n \r\n\r\n          type=\"text\">\r\n      </ul>\r\n      <ul>\r\n        <input  value=\"password\" id=\"password\" name=\"password\"\r\n\r\n \r\n\r\n          style=\"height: 25px; width: 225px;\" type=\"password\">\r\n      </ul>\r\n      <ul>\r\n        <input  value=\"email\" id=\"email\" name=\"email\" style=\"height: 25px; width: 225px;\"\r\n\r\n \r\n\r\n          type=\"text\">\r\n      </ul>\r\n    </h3>\r\n       \r\n          <select value='TipoDiUtente'  id=\"tipoutente\" name=\"tipoutente\" style=\"margin-top: 25px; margin-left: 520px;\" >\r\n2write(Ljava/lang/String;)*
+16*ì
+29Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaU U(˚¯
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaU U(>
+
+%5void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)"ã
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaV V(
+""*∏
+18Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javap p((®•
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaq q( "
+%18javax.servlet.jsp.JspWriter"Bjavax.servlet.jsp.JspContext#getOut()Ljavax/servlet/jsp/JspWriter;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getOut()*
+17*«
+19Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javao o(-∑¥
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javap p((%
+%17javax.servlet.http.HttpSession"Jjavax.servlet.jsp.PageContext#getSession()Ljavax/servlet/http/HttpSession;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getSession()*
+18*¢
+0 "ö
+Ç
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaá á(
+implicit return*…
+1Ç
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaÖ Ö(ª
+∏
+Ç
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaÖ Ö(#
+%28javax.servlet.jsp.JspFactory"__id*
+""˚¯
+Ç
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaÖ Ö(9
+%29void"Qjavax.servlet.jsp.JspFactory#releasePageContext(Ljavax/servlet/jsp/PageContext;)V*%
+#
+%28javax.servlet.jsp.JspFactory*5
+3
+_jspx_page_contextjavax.servlet.jsp.PageContext23releasePageContext(Ljavax/servlet/jsp/PageContext;)*
+0*ñ
+30Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaS, S(3§°
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaS, S(?
+%3java.lang.String"Cjavax.servlet.http.HttpServletRequest#getMethod()Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest2getMethod()»
+≈
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaS S(@ 
+_jspx_methodjava.lang.String"__id*
+
+%3java.lang.Stringêç
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaT
+ T((
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*	
+OPTIONS*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+28
+29*æ
+31Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaR	 R(∏
+µ
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaR	 R(+"
+%0javax.servlet.DispatcherType"__id*
+""√¿
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaR3 R(N"
+%1javax.servlet.DispatcherType"Njavax.servlet.ServletRequest#getDispatcherType()Ljavax/servlet/DispatcherType;*2
+0
+request%javax.servlet.http.HttpServletRequest2getDispatcherType()©¶
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaR	 R(O
+%2boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*$
+"
+%0javax.servlet.DispatcherType*$
+"
+%1javax.servlet.DispatcherType2equals(Ljava/lang/Object;)*
+24
+30*Õ
+20Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javan n(3Ω∫
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javao o(-"
+%16javax.servlet.ServletConfig"Mjavax.servlet.jsp.PageContext#getServletConfig()Ljavax/servlet/ServletConfig;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletConfig()*
+19*™
+21Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javak l( ‚
+ﬂ
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javak l( ,
+pageContextjavax.servlet.jsp.PageContext"__id*&
+$
+%14javax.servlet.jsp.PageContextÒ
+Ó
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javam m(&3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*.
+,
+pageContextjavax.servlet.jsp.PageContext¡æ
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javan n(3#
+%15javax.servlet.ServletContext"Ojavax.servlet.jsp.PageContext#getServletContext()Ljavax/servlet/ServletContext;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletContext()*
+20*ã
+22Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javak k( π
+∂
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javak k( #
+%13javax.servlet.jsp.JspFactory"__id*
+""øº
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javak l( $
+%14javax.servlet.jsp.PageContext"µjavax.servlet.jsp.JspFactory#getPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)Ljavax/servlet/jsp/PageContext;*%
+#
+%13javax.servlet.jsp.JspFactory*.,
+*org.apache.jsp.WEB_002dINF.views.Login_jsp*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse*
+""*
+""*2Ä@*
+""2ygetPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)*
+21*„
+23Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaj j(”–
+Ä
+vC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Login_jsp.javaj j(>
+%12void"Ajavax.servlet.ServletResponse#setContentType(Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*!
+text/html; charset=ISO-8859-12"setContentType(Ljava/lang/String;)*
+22:
+%jsp_context:0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponseB.,
+*org.apache.jsp.WEB_002dINF.views.Login_jsp

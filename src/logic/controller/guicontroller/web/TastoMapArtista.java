@@ -49,8 +49,7 @@ public class TastoMapArtista extends HttpServlet {
 		List<PlaceBean> freePlaces = mc.freePlaces();
 		
 		HttpSession session = request.getSession();
-		Session stma = (Session)session.getAttribute("session");
-		LoggedBean lbtma = stma.getLoggedBean();
+		
 		for(int i=0; i<freePlaces.size(); i++) {
         	if(freePlaces.get(i).getName().equals(value)) {
         		session.setAttribute("Posto", freePlaces.get(i).getName());
@@ -76,7 +75,8 @@ public class TastoMapArtista extends HttpServlet {
 				HttpSession session2 = request.getSession();
 				Session stma2 = (Session)session2.getAttribute("session");
 				LoggedBean lbtma2 = stma2.getLoggedBean();
-					mc.submitEvent(lbtma2.getUsername() ,name, place, desc);
+				String uname = lbtma2.getUsername();
+				mc.submitEvent(uname ,name, place, desc);
 				} catch (DescriptionTooLongException e) {
 					
 					e.printStackTrace();

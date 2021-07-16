@@ -1,0 +1,24 @@
+
+alogic.engclasses.utils.TypeException#getUrl(Llogic/engclasses/utils/TypeException;)Ljava/net/URL;m
+cC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/src/logic/engclasses/utils/TypeException.java! !("1*Õ
+1m
+cC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/src/logic/engclasses/utils/TypeException.java"	 "(Í
+Ê
+m
+cC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/src/logic/engclasses/utils/TypeException.java") "(5
+%0java.lang.String"__id*;*9
+/
+subview$logic.engclasses.utils.TypeException"
+pathˆ…
+m
+cC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/src/logic/engclasses/utils/TypeException.java"	 "(6
+%1java.net.URL"=java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;*
+""*
+
+%0java.lang.String2getResource(Ljava/lang/String;)"…
+m
+cC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/src/logic/engclasses/utils/TypeException.java" "(7
+
+%1java.net.URL:/
+subview$logic.engclasses.utils.TypeExceptionB("&
+$logic.engclasses.utils.TypeException

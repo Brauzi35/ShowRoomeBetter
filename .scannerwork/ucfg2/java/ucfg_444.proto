@@ -1,0 +1,537 @@
+
+êorg.apache.jsp.WEB_002dINF.views.ArtistRequest_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Và
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaY Y("78*ï
+46h
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspP R(Wûõ
+h
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspP R(W
+%28void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*64
+2\r\n\r\n<!--              qui mettere if   -->\r\n2write(Ljava/lang/String;)*
+45* 
+68à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javau v( Í
+Á
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javau v( ,
+pageContextjavax.servlet.jsp.PageContext"__id*&
+$
+%14javax.servlet.jsp.PageContext˘
+ˆ
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaw w(&3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*.
+,
+pageContextjavax.servlet.jsp.PageContext…∆
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javax x(3#
+%15javax.servlet.ServletContext"Ojavax.servlet.jsp.PageContext#getServletContext()Ljavax/servlet/ServletContext;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletContext()*
+67*∞
+24j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp| ~(∑¥
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp| ~(
+%40void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*Ã…
+∆\r\n <h1 style=\"margin-top: 110px;\">Le tue Proposte:</h1>\r\n\t<p style=\"margin-top: 90px; margin-left: 600px;\"  ><h1>La richiesta e' stata rifiutata, attendi che l'host la dismetta</h1></p>\r\n2write(Ljava/lang/String;)*
+23*è
+47j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspM O(ñì
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspM O(
+%27void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*´®
+•\r\n <h1 style=\"margin-top: 110px;\">Le tue Proposte:</h1>\r\n\t<p style=\"margin-top: 110px; margin-left: 600px;\"><h1>Al momento non ci sono proposte</h1></p>\r\n2write(Ljava/lang/String;)*
+46*´
+69à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javau u( ¡
+æ
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javau u( #
+%13javax.servlet.jsp.JspFactory"__id*
+""œÃ
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javau v( $
+%14javax.servlet.jsp.PageContext"µjavax.servlet.jsp.JspFactory#getPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)Ljavax/servlet/jsp/PageContext;*%
+#
+%13javax.servlet.jsp.JspFactory*64
+2org.apache.jsp.WEB_002dINF.views.ArtistRequest_jsp*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse*
+""*
+""*2Ä@*
+""2ygetPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)*
+68*˙
+49j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspL L(˝˙
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspL L(
+%26boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+statejava.lang.String*
+no requests found2equals(Ljava/lang/Object;)*
+46
+47*˙
+29j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp{ {(˝˙
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp{ {(
+%39boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+statejava.lang.String*
+no requests found2equals(Ljava/lang/Object;)*
+24
+23*Û
+70à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javat t(€ÿ
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javat t(>
+%12void"Ajavax.servlet.ServletResponse#setContentType(Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*!
+text/html; charset=ISO-8859-12"setContentType(Ljava/lang/String;)*
+69*å	
+71à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javai i(4 
+«
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javai i(4,
+pageContextjavax.servlet.jsp.PageContext"__id*
+""«
+ƒ
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaj j(2)
+sessionjavax.servlet.http.HttpSession"__id*
+""¿
+Ω
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javam m(+"
+outjavax.servlet.jsp.JspWriter"__id*
+""∆
+√
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javao o(1(
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*
+""—
+Œ
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javap p(<3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*
+""*
+70*Ã
+50j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspI I(”–
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspI
+ L(,
+%25void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*ËÂ
+‚ size=\"65\" maxlength=\"40\" ;style=\"background-color:\" #10030f=\"\" type=\"submit\"> </h1>\r\n          <form action=\"Logout\" method=\"post\">          <h1 style=\"margin-left: 1190px;margin-top: -57px;\" > <input value=\"logout\" size=\"65\" maxlength=\"40\" ;style=\"background-color:\" #10030f=\"\" type=\"submit\"> </h1></form> \r\n    \r\n\r\n2write(Ljava/lang/String;)*
+49*Ê	
+72à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javac c(ÉÄ
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javac c(>
+
+%9void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)®
+•
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javad d(D
+
+%10int"__id*
+""çä
+â
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javad d(à
+%11void"Fjavax.servlet.http.HttpServletResponse#sendError(ILjava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*
+
+
+%10int*CA
+?JSPs only permit GET, POST or HEAD. Jasper also permits OPTIONS2sendError(ILjava/lang/String;)"ì
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javae e(
+""*è
+51k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspH H(ªïí
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspH\ H(d
+%24void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+usernamejava.lang.String2print(Ljava/lang/String;)*
+50*±
+73à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javabJ b(Pïí
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javabJ b(e
+%8boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+HEAD*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+71
+72*ﬁ
+
+52ä
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaë ë(	ƒ	¡	
+ã
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaë ë(√
+%23void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*∑¥
+±      <form action=\"Homepage\" method=\"post\">\r\n        <p style=\"margin-top:-74px;margin-left:-555px;\"><button name=\"Profile\" style=\"height: 35px ; width: 95px; margin-top: -46px; margin-left: 570px;background-color: #4D4D4D;\">Homepage</button>\r\n        </p>\r\n      </form>\r\n      <form action=\"HostShowWebController\" method=\"get\">\r\n        <p style=\"margin-top:-74px;margin-left:937px;\"><button name=\"Proposte\" style=\"height: 35px ; width: 95px; margin-top: -48px; margin-left: 210px;background-color: #4D4D4D; color:white;\">Proposte</button></p>\r\n      </form>\r\n    </h1>\r\n    <h1 style=\"margin-top: -74px;margin-left:px ;background-color: white;\">\r\n      <style>\r\n#rectangle {\r\n    width: 1250px;\r\n    height: 50px;\r\n    background: #10030F;\r\n}\r\n</style> <div id=\"rectangle\"></div>\r\n    </h1>\r\n                      <h1 style=\"margin-top: -159px; margin-left: 1100px;\"> <input value=2write(Ljava/lang/String;)*
+51*±
+74à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javab* b(0ïí
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javab* b(E
+%7boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+POST*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+71
+73*
+30h
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspy {([˘ˆ
+h
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspy {([
+%38void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+\r\n\r\n \r\n2write(Ljava/lang/String;)*
+29*À
+53k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp H(ª—
+Œ
+
+k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp H(ª
+%22void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*Â‚
+ﬂ\r\n \r\n<!DOCTYPE html>\r\n<html  lang=\"it\">\r\n\r\n  <head>\r\n    <title>Prova</title>\r\n  </head>\r\n  <body style=\" height: 512px; background-color: white;\"><img src=\"https://github.com/Brauzi35/ShowRoome-ISPW2021/blob/main/Immagini/26362.png?raw=true\"\r\n\r\n \r\n\r\n      alt=\"\" style=\"width: 93px; height: 73px; margin-left: -2px;\"><br>\r\n   \r\n    <h1 style=\"margin-top: -45.5667px; margin-left: 115px;\">  ShowRoome Performer</h1>  \r\n\r\n \r\n\r\n\r\n \r\n\r\n   <h1 style=\"margin-top:84px;margin-left:3px;\">\r\n       <form action=\"TastoChart\" method=\"post\">\r\n        <p style=\"margin-top:-74px;margin-left:160px;\"><button name=\"Profile\" style=\"height: 35px ; width: 95px; margin-top: -48px; margin-left: 570px;background-color: #4D4D4D;\">Chart</button>\r\n        </p>\r\n      </form>\r\n      <form action=\"TastoMap\" method=\"post\">\r\n        <p style=\"margin-top:-74px;margin-left:-180px;\"><button name=\"Profile\" style=\"height: 35px ; width: 95px; margin-top: -48px; margin-left: 570px;background-color: #4D4D4D;\">Map</button>\r\n        </p>\r\n      </form>\r\n2write(Ljava/lang/String;)*
+52*∞
+75à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javab b(îë
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javab b(%
+%6boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+GET*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+71
+74*®
+31j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspl x(Ø¨
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspl x(
+%37void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*ƒ¡
+æ</textarea>\r\n            \r\n        </ul>\r\n        \r\n           \r\n      </h3>\r\n    </li>\r\n    </ul>\r\n    <input readonly=\"readonly\" id=\"Submit\" name=\"button\" type=\"submit\" value=\"Accetta\"  style=\"resize:none;height: 35px; width: 95px; margin-top: -600px; margin-left: 1050px;background-color:purple ;\"> \r\n      <input readonly=\"readonly\" id=\"Submit\" name=\"button\" type=\"submit\" value=\"Rifiuta\"  style=\"resize:none;height: 35px; width: 95px; margin-top: -600px; margin-left: 950px;background-color:purple ;\"> \r\n  \r\n   </p>\r\n\r\n2write(Ljava/lang/String;)*
+30*´
+76à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java_ _(ÉÄ
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java_ _(>
+
+%5void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)"ì
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java` `(
+""*“
+32k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspk
+ k(¶ÿ’
+k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspk
+ k(¶
+%36"&javax.servlet.jsp.JspWriter#print([C)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2	print([C)*
+31*∂
+77à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java], ](3¨©
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java], ](?
+%3java.lang.String"Cjavax.servlet.http.HttpServletRequest#getMethod()Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest2getMethod()–
+Õ
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java] ](@ 
+_jspx_methodjava.lang.String"__id*
+
+%3java.lang.Stringòï
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java^
+ ^((
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*	
+OPTIONS*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+75
+76*ﬁ
+78à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java\	 \(¿
+Ω
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java\	 \(+"
+%0javax.servlet.DispatcherType"__id*
+""À»
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java\3 \(N"
+%1javax.servlet.DispatcherType"Njavax.servlet.ServletRequest#getDispatcherType()Ljavax/servlet/DispatcherType;*2
+0
+request%javax.servlet.http.HttpServletRequest2getDispatcherType()±Æ
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java\	 \(O
+%2boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*$
+"
+%0javax.servlet.DispatcherType*$
+"
+%1javax.servlet.DispatcherType2equals(Ljava/lang/Object;)*
+71
+77*¨
+34k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspi k(¶≤Ø
+k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspi k(¶
+%35void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*∆√
+¿</textarea>\r\n        </ul>\r\n        <ul>\r\n          <textarea  readonly=\"readonly\"   id=\"password\" name=\"password\"  style=\"resize:none;height: 25px; width: 300px;\" type=\"text\">2write(Ljava/lang/String;)*
+32*“
+35k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsph
+ h(™ÿ’
+k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsph
+ h(™
+%34"&javax.servlet.jsp.JspWriter#print([C)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+""2	print([C)*
+34*´
+57j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp (≤
+Ø
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp (
+%21java.lang.String"
+__arrayGet*
+
+listjava.util.List*2 *
+53*é
+58j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp (ï
+í
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp (
+listjava.util.List"__id*
+""*
+57*¡
+37k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspd h(™«ƒ
+k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspd h(™
+%33void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*€ÿ
+’</textarea>\r\n        </ul>\r\n        \r\n        \r\n        <ul>\r\n          <textarea   readonly=\"readonly\"  id=\"Cognome\" name=\"Cognome\" style=\"resize:none;height: 80px; width: 300px;\" type=\"text\">2write(Ljava/lang/String;)*
+35*î
+59j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp (õ
+ò
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp (
+usernamejava.lang.String"__id*
+""*
+58*å
+38k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspc
+ c(¶íè
+l
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspcí c(ï
+%32void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+%31java.lang.String2print(Ljava/lang/String;)*
+37*á
+16l
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspÑ ì(çä
+l
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspÑ ì(
+%44void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*†ù
+ö\r\n   \r\n  <!--              qui mettere else -->\r\n  \r\n  \r\n  \r\n  \r\n   \r\n   \r\n   </form>\r\n   \r\n\r\n \r\n\r\n  </body>\r\n</html>\r\n   2write(Ljava/lang/String;)*
+1*Æ
+39k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspc
+ c(¶¥
+±
+l
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspcí c(ï
+%31java.lang.String"
+__arrayGet*
+
+listjava.util.List*2 *
+38*Ω
+17l
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspÅ É(¬ø
+l
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspÅ É(
+%43void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*’“
+œ\r\n <h1 style=\"margin-top: 110px;\">Le tue Proposte:</h1>\r\n\t<p style=\"margin-top: 90px; margin-left: 600px;\"  ><h1>La richiesta e' stata accettata, attendi che l'host dia il via allo show</h1></p>\r\n2write(Ljava/lang/String;)*
+16*™
+0 "¢
+ä
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaª ª(
+implicit return*·
+1ä
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaπ π(√
+¿
+ä
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaπ π(#
+%52javax.servlet.jsp.JspFactory"__id*
+""ÉÄ
+ä
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaπ π(9
+%53void"Qjavax.servlet.jsp.JspFactory#releasePageContext(Ljavax/servlet/jsp/PageContext;)V*%
+#
+%52javax.servlet.jsp.JspFactory*5
+3
+_jspx_page_contextjavax.servlet.jsp.PageContext23releasePageContext(Ljavax/servlet/jsp/PageContext;)*
+0*˜
+40k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspS c(¶˝˙
+k
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspS c(¶
+%30void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*ëé
+ã\r\n <h1 style=\"margin-top: 110px;\">Le tue Proposte:</h1>\r\n <p style=\"margin-top: 200px; margin-left: 5px;\"> <img alt=\"\" src=\"https://www.cosafarearoma.it/wp-content/uploads/2014/06/Trinity-College-Irish-Pub-Roma.jpg\"\r\n\r\n \r\n\r\n        style=\"width: 235px; height: 155px; margin-left: -4px; margin-top: -357px;\">\r\n    </p>\r\n    \r\n   <p     style=\"margin-top: -190px; margin-left: 600px;\"  >\r\n         <form action=\"ArtistRequestController\" method=\"post\">\r\n\r\n <ul>\r\n\r\n  <li  style=\" list-style-type:none;\">\r\n      <h3 style=\" margin-top: 100px;margin-left: 500px;\">\r\n        <ul>\r\n          <textarea   readonly=\"readonly\" value=\"nome\" id=\"nome\" name=\"nome\" style=\"resize:none;height: 25px; width: 300px;\" type=\"text\">2write(Ljava/lang/String;)*
+39*«
+62j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp
+ 
+(ö
+ó
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp (
+statejava.lang.String"__id*
+good±
+Æ
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp# (/
+%20java.lang.Object"__mapGet*
+
+%jsp_context*	
+session*
+59*á
+64à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java{ {( ﬁ
+€
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java{ {( "
+outjavax.servlet.jsp.JspWriter"__id*$
+"
+%18javax.servlet.jsp.JspWriter‰
+·
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java| |((
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*$
+"
+outjavax.servlet.jsp.JspWriterß§
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp 	(
+%19void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*=;
+9 \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    2write(Ljava/lang/String;)*
+62*≥
+65à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaz z((Ë
+Â
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaz z(()
+sessionjavax.servlet.http.HttpSession"__id*'
+%
+%17javax.servlet.http.HttpSession∞≠
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.java{ {( "
+%18javax.servlet.jsp.JspWriter"Bjavax.servlet.jsp.JspContext#getOut()Ljavax/servlet/jsp/JspWriter;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getOut()*
+64*◊
+66à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javay y(-øº
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javaz z((%
+%17javax.servlet.http.HttpSession"Jjavax.servlet.jsp.PageContext#getSession()Ljavax/servlet/http/HttpSession;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getSession()*
+65*˛
+22l
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspÄ Ä(ˇ¸
+l
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspÄ Ä(
+%42boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+statejava.lang.String*
+no requests found2equals(Ljava/lang/Object;)*
+16
+17*˙
+45j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspR R(˝˙
+j
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jspR R(
+%29boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+statejava.lang.String*
+no requests found2equals(Ljava/lang/Object;)*
+40
+30*›
+67à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javax x(3≈¬
+à
+~C:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\ArtistRequest_jsp.javay y(-"
+%16javax.servlet.ServletConfig"Mjavax.servlet.jsp.PageContext#getServletConfig()Ljavax/servlet/ServletConfig;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletConfig()*
+66*Ì
+23i
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp Ä(WıÚ
+i
+`C:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/ArtistRequest.jsp Ä(W
+%41void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+\r\n\r\n2write(Ljava/lang/String;)*
+22:
+%jsp_context:0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponseB64
+2org.apache.jsp.WEB_002dINF.views.ArtistRequest_jsp

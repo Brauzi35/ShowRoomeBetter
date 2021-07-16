@@ -23,7 +23,7 @@ import logic.engclasses.utils.Session;
 public class TastoMap extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     String tipoutente;
-    
+    static String se = "session";
 	String message ="there is no show here";
 	static String mapartistjsp = "/WEB-INF/views/MapArtist.jsp";
 	int ringbell = 0;
@@ -42,7 +42,7 @@ public class TastoMap extends HttpServlet {
         List<EventBean> leb = mc.liveEventsList();
         
         HttpSession session = request.getSession();
-        Session stm = (Session) session.getAttribute("session");
+        Session stm = (Session) session.getAttribute(se);
         LoggedBean lbtm = stm.getLoggedBean();
         //ringbell is the variable that serves to understand if the targetted show is live
         
@@ -60,7 +60,7 @@ public class TastoMap extends HttpServlet {
     		session.setAttribute("mapArtist", message);
     		session.setAttribute("mapDescription",message);
         }
-        session.setAttribute("session", stm);
+        session.setAttribute(se, stm);
         ringbell=0;
         if(lbtm.getId()==2) {
         	RequestDispatcher dispatcherN = request.getRequestDispatcher(mapartistjsp);
@@ -80,7 +80,7 @@ public class TastoMap extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 HttpSession session1 = request.getSession();
-	        Session stm1 = (Session) session1.getAttribute("session");
+	        Session stm1 = (Session) session1.getAttribute(se);
 	        LoggedBean lbtm1 = stm1.getLoggedBean();
 		
 	    if (lbtm1.getId()==2){

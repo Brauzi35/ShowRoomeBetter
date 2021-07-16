@@ -1,0 +1,346 @@
+
+îorg.apache.jsp.WEB_002dINF.views.RegistrazioneUser_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Vç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaO O("37*∫
+35ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaU U(àÖ
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaU U(>
+
+%5void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)"ò
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaV V(
+""*¬
+24ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javap p((Ì
+Í
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javap p(()
+sessionjavax.servlet.http.HttpSession"__id*'
+%
+%17javax.servlet.http.HttpSessionµ≤
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaq q( "
+%18javax.servlet.jsp.JspWriter"Bjavax.servlet.jsp.JspContext#getOut()Ljavax/servlet/jsp/JspWriter;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getOut()*
+23* 
+36ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaS, S(3±Æ
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaS, S(?
+%3java.lang.String"Cjavax.servlet.http.HttpServletRequest#getMethod()Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest2getMethod()’
+“
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaS S(@ 
+_jspx_methodjava.lang.String"__id*
+
+%3java.lang.Stringùö
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaT
+ T((
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*	
+OPTIONS*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+35
+34*·
+25ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javao o(-ƒ¡
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javap p((%
+%17javax.servlet.http.HttpSession"Jjavax.servlet.jsp.PageContext#getSession()Ljavax/servlet/http/HttpSession;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getSession()*
+24*Ú
+37ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaR	 R(≈
+¬
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaR	 R(+"
+%0javax.servlet.DispatcherType"__id*
+""–Õ
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaR3 R(N"
+%1javax.servlet.DispatcherType"Njavax.servlet.ServletRequest#getDispatcherType()Ljavax/servlet/DispatcherType;*2
+0
+request%javax.servlet.http.HttpServletRequest2getDispatcherType()∂≥
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaR	 R(O
+%2boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*$
+"
+%0javax.servlet.DispatcherType*$
+"
+%1javax.servlet.DispatcherType2equals(Ljava/lang/Object;)*
+36
+30*Á
+26ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javan n(3 «
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javao o(-"
+%16javax.servlet.ServletConfig"Mjavax.servlet.jsp.PageContext#getServletConfig()Ljavax/servlet/ServletConfig;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletConfig()*
+25*ﬁ
+27ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javak l( Ô
+Ï
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javak l( ,
+pageContextjavax.servlet.jsp.PageContext"__id*&
+$
+%14javax.servlet.jsp.PageContext˛
+˚
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javam m(&3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*.
+,
+pageContextjavax.servlet.jsp.PageContextŒÀ
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javan n(3#
+%15javax.servlet.ServletContext"Ojavax.servlet.jsp.PageContext#getServletContext()Ljavax/servlet/ServletContext;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletContext()*
+26*ô
+16n
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp, E(ùö
+n
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp, E(
+%26void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*Æ´
+®</input>\r\n    \r\n      <ul>\r\n        <input  value=\"Nome Utente\" id=\"username\" name=\"username\" style=\"height: 25px; width: 225px;\"type=\"text\"></input>\r\n      </ul>\r\n      <ul>\r\n        <input  value=\"password\" id=\"password\" name=\"password\"\r\n\r\n \r\n\r\n          style=\"height: 25px; width: 225px;\" type=\"text\"></input>\r\n      </ul>\r\n      \r\n         \r\n                \r\n           \r\n    </h3>\r\n      <button name=\"Informazioni\" style=\"height: 35px; width: 90px; margin-top: 60px; margin-left: 595px; background-color: #4d4d4d;\">Registrati</button></form>\r\n      \r\n     \r\n </form>\r\n \r\n\r\n \r\n\r\n  </body>\r\n</html>2write(Ljava/lang/String;)*
+1*æ
+28ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javak k( ∆
+√
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javak k( #
+%13javax.servlet.jsp.JspFactory"__id*
+""ÿ’
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javak l( $
+%14javax.servlet.jsp.PageContext"µjavax.servlet.jsp.JspFactory#getPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)Ljavax/servlet/jsp/PageContext;*%
+#
+%13javax.servlet.jsp.JspFactory*:8
+6org.apache.jsp.WEB_002dINF.views.RegistrazioneUser_jsp*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse*
+""*
+""*2Ä@*
+""2ygetPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)*
+27*ë
+17n
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp+ +(~îë
+n
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp+ +(
+%25void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+idsjava.lang.String2print(Ljava/lang/String;)*
+16*˝
+29ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaj j(‡›
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaj j(>
+%12void"Ajavax.servlet.ServletResponse#setContentType(Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*!
+text/html; charset=ISO-8859-12"setContentType(Ljava/lang/String;)*
+28*Å
+18ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.java{ {(	‰·
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.java{ {(d
+%24void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*VT
+R id=\"username\" name=\"ids\" style=\"display:none; height: 25px; width: 225px;\">2write(Ljava/lang/String;)*
+17*ë
+19n
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp+ +(~îë
+n
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp+ +(
+%23void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+idsjava.lang.String2print(Ljava/lang/String;)*
+18*Ø
+0 "ß
+è
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaè è(
+implicit return*
+1è
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaç ç(»
+≈
+è
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaç ç(#
+%34javax.servlet.jsp.JspFactory"__id*
+""àÖ
+è
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaç ç(9
+%35void"Qjavax.servlet.jsp.JspFactory#releasePageContext(Ljavax/servlet/jsp/PageContext;)V*%
+#
+%34javax.servlet.jsp.JspFactory*5
+3
+_jspx_page_contextjavax.servlet.jsp.PageContext23releasePageContext(Ljavax/servlet/jsp/PageContext;)*
+0*™	
+30ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.java_ _(4œ
+Ã
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.java_ _(4,
+pageContextjavax.servlet.jsp.PageContext"__id*
+""Ã
+…
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.java` `(2)
+sessionjavax.servlet.http.HttpSession"__id*
+""≈
+¬
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javac c(+"
+outjavax.servlet.jsp.JspWriter"__id*
+""À
+»
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javae e(1(
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*
+""÷
+”
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaf f(<3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*
+""*
+29*ˇ	
+31ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaY Y(àÖ
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaY Y(>
+
+%9void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)≠
+™
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaZ Z(D
+
+%10int"__id*
+""íè
+é
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaZ Z(à
+%11void"Fjavax.servlet.http.HttpServletResponse#sendError(ILjava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*
+
+
+%10int*CA
+?JSPs only permit GET, POST or HEAD. Jasper also permits OPTIONS2sendError(ILjava/lang/String;)"ò
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.java[ [(
+""*“
+20ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javay y(	µ≤
+é
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javay y(±
+%22void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*•¢
+ü  <ul>\r\n        <button  value=\"Sponsor\" id=\"email\" name=\"id\" style=\"height: 25px; width: 60px;margin-top: -130px; margin-left:150px;\">Sponsor</button>\r\n      </ul>\r\n    \r\n    </form>\r\n    \r\n    <form action=\"Registrazione\" method=\"get\">\r\n        <input  value=2write(Ljava/lang/String;)*
+19*ª
+32ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaXJ X(Pöó
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaXJ X(e
+%8boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+HEAD*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+30
+31*Ç
+21l
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp (4≠
+™
+n
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp (
+
+idsjava.lang.String"__id*
+
+%20java.lang.Object◊
+‘
+
+l
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp +(~
+%21void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*ÍÁ
+‰\r\n<!DOCTYPE html>\r\n<html  lang=\"it\">\r\n  <head>\r\n    <title>ShoowRome</title>\r\n\t <body>\r\n  <style>\r\nbody {\r\n  background-image: url('https://github.com/Brauzi35/ShowRoome-ISPW2021/blob/main/Immagini/roma-2.jpg?raw=true');\r\n}\r\n</style>\r\n    \r\n  </head>\r\n    <h1 style=\"margin-top: -45.5667px; margin-left: 115px;\"> ShowRoome </h1>\r\n    <p style=\"margin-top: -45.5667px; margin-left: 115px;\"> </p>\r\n    <h3 style=\" margin-top: 70px;margin-left: 480px;\">\r\n     <ul>\r\n             <label  name=\"login\" value=\"\" style=\"height: 60px; width: 150px; margin-top: 50px; margin-left:px;\">Selezionare: </label>\r\n    \r\n    </ul>\r\n    <form action=\"Registrazione\" method=\"post\">\r\n    <ul>\r\n        <button  value=\"User\" id=\"email\" name=\"id\" style=\"height: 25px; width: 60px;margin-top: -130px; margin-left:150px; color:white;\">User</button>\r\n      </ul>    \r\n\r\n \r\n\r\n  <ul>\r\n        <button  value=\"Performer\" id=\"email\" name=\"id\" style=\"height: 25px; width: 60px;margin-top: -150px; margin-left:150px; \">Artist</button>\r\n      </ul>\r\n      \r\n2write(Ljava/lang/String;)*
+20*ª
+33ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaX* X(0öó
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaX* X(E
+%7boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+POST*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+30
+32*±
+22n
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp (¥
+±
+n
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp ()
+%20java.lang.Object"__mapGet*
+
+%jsp_context*
+
+id_reg*
+21*∫
+34ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaX X(ôñ
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaX X(%
+%6boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+GET*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+30
+33*È
+23ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaq q( „
+‡
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javaq q( "
+outjavax.servlet.jsp.JspWriter"__id*$
+"
+%18javax.servlet.jsp.JspWriterÈ
+Ê
+ç
+ÇC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\RegistrazioneUser_jsp.javar r((
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*$
+"
+outjavax.servlet.jsp.JspWriter˙˜
+n
+dC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/RegistrazioneUser.jsp (
+%19void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+\r\n    2write(Ljava/lang/String;)*
+22:
+%jsp_context:0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponseB:8
+6org.apache.jsp.WEB_002dINF.views.RegistrazioneUser_jsp

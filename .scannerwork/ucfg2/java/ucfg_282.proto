@@ -1,0 +1,16 @@
+
+@logic.model.RequestedShow#getApprovedPartner()Ljava/lang/String;b
+XC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/src/logic/model/RequestedShow.javaI I(!"1*£
+1b
+XC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/src/logic/model/RequestedShow.javaJ	 J(¹
+¶
+b
+XC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/src/logic/model/RequestedShow.javaJ	 J(
+%0java.lang.String"__id*2*0
+logic.model.RequestedShow"
+approvedPartner"~
+b
+XC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/src/logic/model/RequestedShow.javaJ J(
+
+%0java.lang.StringB
+logic.model.RequestedShow

@@ -1,0 +1,7 @@
+organization=brauzi35
+projectKey=Brauzi35_ShowRoomeBetter
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.21709
+dashboardUrl=https://sonarcloud.io/dashboard?id=Brauzi35_ShowRoomeBetter
+ceTaskId=AXqv_zPclG1PxIkOFSdw
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXqv_zPclG1PxIkOFSdw

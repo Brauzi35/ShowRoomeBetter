@@ -1,0 +1,442 @@
+
+Üorg.apache.jsp.WEB_002dINF.views.Map_jsp#_jspService(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaS S("47*ä
+46~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaW, W(3°û
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaW, W(?
+%3java.lang.String"Cjavax.servlet.http.HttpServletRequest#getMethod()Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest2getMethod()≈
+¬
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaW W(@ 
+_jspx_methodjava.lang.String"__id*
+
+%3java.lang.Stringçä
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaX
+ X((
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*	
+OPTIONS*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+44
+45*˚
+24a
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp/ /(™ãà
+`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp/J /(R
+%26void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+usernamejava.lang.String2print(Ljava/lang/String;)*
+23*≤
+47~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaV	 V(µ
+≤
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaV	 V(+"
+%0javax.servlet.DispatcherType"__id*
+""¿Ω
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaV3 V(N"
+%1javax.servlet.DispatcherType"Njavax.servlet.ServletRequest#getDispatcherType()Ljavax/servlet/DispatcherType;*2
+0
+request%javax.servlet.http.HttpServletRequest2getDispatcherType()¶£
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaV	 V(O
+%2boolean"*java.lang.Enum#equals(Ljava/lang/Object;)Z*$
+"
+%0javax.servlet.DispatcherType*$
+"
+%1javax.servlet.DispatcherType2equals(Ljava/lang/Object;)*
+46
+40*”
+25Ä
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaÇ Ç(	√¿
+Å
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaÇ Ç(Ã
+%25void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*¿Ω
+∫      \r\n      </form>\r\n      <form action=\"HostShowWebController\" method=\"get\">\r\n        <p style=\"margin-top:-74px;margin-left:937px;\"><input id=\"Submit\" type=\"submit\" name=\"Setting\" value=\"Sponsored\" style=\"height: 35px ; width: 95px; margin-top: -48px; margin-left: 175px;background-color: #4D4D4D;\"></input></p>\r\n      </form>\r\n    </h1>\r\n    <h1 style=\"margin-top: -74px;margin-left:px ;background-color: white;\">\r\n      <style>\r\n      \r\n#rectangle {\r\n    width: 1250px;\r\n    height: 50px;\r\n    background: #10030F;\r\n}\r\n</style> <div id=\"rectangle\"></div>\r\n    </h1>\r\n    <h1 style=\"margin-top: -159px; margin-left: 1100px;\"> <input value=2write(Ljava/lang/String;)*
+24*ƒ
+26`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp (ë
+é
+`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp (
+usernamejava.lang.String"__id*
+""¡
+æ
+
+a
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp /(™
+%24void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*ﬂ‹
+Ÿ\r\n    \r\n<!DOCTYPE html>\r\n<html  lang=\"it\">\r\n  <body style=\"height: 512px; background-color: white;\"><img\r\n\r\n      src=\"https://github.com/Brauzi35/ShowRoome-ISPW2021/blob/main/Immagini/26362.png?raw=true\" alt=\"\" style=\"width: 93px; height: 73px; margin-left: -2px;\"><br>\r\n    <h1 style=\"margin-top: -45.5667px; margin-left: 115px;\"> ShowRoome </h1>\r\n    <h1 style=\"margin-top:84px;margin-left:3px;\">\r\n     \r\n      <form action=\"TastoChart\" method=\"post\">\r\n        <p style=\"margin-top:-74px;margin-left:170px;\"><input id=\"Submit\" name=\"Chart\" type=\"submit\" value=\"Chart\" \" style=\"height: 35px ; width: 95px; margin-top: -48px; margin-left: 400px;background-color: #4D4D4D;\"></input>\r\n        </p>\r\n      </form>\r\n      <form action=\"TastoMap\" method=\"post\">\r\n        <p style=\"margin-top:-74px;margin-left:-170px;\"><input id=\"Submit\" name=\"Map\" type=\"submit\" value=\"Homepage\"  style=\"height: 35px ; width: 95px; margin-top: -48px; margin-left: 220px;color:white; background-color: #4D4D4D;\"></input>\r\n        </p>\r\n      </form>\r\n2write(Ljava/lang/String;)*
+25*¿
+29`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp	 	(Hß
+§
+`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp	 	(
+descriptionjava.lang.String"__id*
+
+%22java.lang.Objectß
+§
+`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp
+" 
+(.
+%23java.lang.Object"__mapGet*
+
+%jsp_context*	
+session*
+26*¬
+30`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp (>¢
+ü
+`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp (
+artistjava.lang.String"__id*
+
+%21java.lang.ObjectÆ
+´
+`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp	) 	(5
+%22java.lang.Object"__mapGet*
+
+%jsp_context*
+mapDescription*
+29*º
+31`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp (<°
+û
+`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp (
+placejava.lang.String"__id*
+
+%20java.lang.Object©
+¶
+`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp$ (0
+%21java.lang.Object"__mapGet*
+
+%jsp_context*
+	mapArtist*
+30*ó
+32`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp ("®
+•
+`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp# (/
+%20java.lang.Object"__mapGet*
+
+%jsp_context*
+
+mapPlace*
+31*À
+33~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javau u( ”
+–
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javau u( "
+outjavax.servlet.jsp.JspWriter"__id*$
+"
+%18javax.servlet.jsp.JspWriterŸ
+÷
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javav v((
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*$
+"
+outjavax.servlet.jsp.JspWriteråâ
+`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp (
+%19void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*,*
+(\r\n        \r\n        \r\n    \r\n    2write(Ljava/lang/String;)*
+32*í
+34~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javat t((›
+⁄
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javat t(()
+sessionjavax.servlet.http.HttpSession"__id*'
+%
+%17javax.servlet.http.HttpSession•¢
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javau u( "
+%18javax.servlet.jsp.JspWriter"Bjavax.servlet.jsp.JspContext#getOut()Ljavax/servlet/jsp/JspWriter;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getOut()*
+33*¡
+35~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javas s(-¥±
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javat t((%
+%17javax.servlet.http.HttpSession"Jjavax.servlet.jsp.PageContext#getSession()Ljavax/servlet/http/HttpSession;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getSession()*
+34*«
+36~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javar r(3∫∑
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javas s(-"
+%16javax.servlet.ServletConfig"Mjavax.servlet.jsp.PageContext#getServletConfig()Ljavax/servlet/ServletConfig;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletConfig()*
+35*û
+37~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javao p( ﬂ
+‹
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javao p( ,
+pageContextjavax.servlet.jsp.PageContext"__id*&
+$
+%14javax.servlet.jsp.PageContextÓ
+Î
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaq q(&3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*.
+,
+pageContextjavax.servlet.jsp.PageContextæª
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javar r(3#
+%15javax.servlet.ServletContext"Ojavax.servlet.jsp.PageContext#getServletContext()Ljavax/servlet/ServletContext;*.
+,
+pageContextjavax.servlet.jsp.PageContext2getServletContext()*
+36*Ä
+38~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javao o( ∂
+≥
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javao o( #
+%13javax.servlet.jsp.JspFactory"__id*
+""∫∑
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javao p( $
+%14javax.servlet.jsp.PageContext"µjavax.servlet.jsp.JspFactory#getPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)Ljavax/servlet/jsp/PageContext;*%
+#
+%13javax.servlet.jsp.JspFactory*,*
+(org.apache.jsp.WEB_002dINF.views.Map_jsp*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse*
+""*
+""*2Ä@*
+""2ygetPageContext(Ljavax/servlet/Servlet;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljava/lang/String;ZIZ)*
+37*Ø
+16Ä
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaã ã(	†
+ù
+
+Å
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaã ã(©
+%34void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*ùö
+ó<button  id=\"amo3\" type=\"submit\" name=\"action\" value=\"Pigneto\" onclick=\"myFunction(green)\" style=\"width: 60x; height: 60px; background-color: Transparent; border: none; margin-top: 470px; position:absolute; margin-left:-350px; float:left;\"><img src=\"https://image.flaticon.com/icons/png/512/48/48703.png\" style=\"width: 55x; height: 55px;\" /></button>\r\n<button  id=\"amo4\" type=\"submit\" name=\"action\" value=\"Statuario\" onclick=\"myFunction()\" style=\"width: 60x; height: 60px; background-color: Transparent; border: none; margin-top: 700px; position:absolute; margin-left:-270px; float:left;\"><img src=\"https://image.flaticon.com/icons/png/512/48/48703.png\" style=\"width: 55x; height: 55px;\" /></button>\r\n</div>\r\n</form>\r\n                                                                                 \r\n<script>\r\nfunction myFunction(element_id, value) {\r\n\tdocument.getElementById(element_id).style.border.color = value;\r\n}\r\n</script>\r\n \r\n    \r\n<div id=\"risultato\"></div>\r\n \r\n\r\n</html>2write(Ljava/lang/String;)*
+1*›
+39~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javan n(–Õ
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javan n(>
+%12void"Ajavax.servlet.ServletResponse#setContentType(Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*!
+text/html; charset=ISO-8859-12"setContentType(Ljava/lang/String;)*
+38*ƒ
+17^
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp9 S(◊‘
+^
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp9 S(
+%33void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*¯	ı	
+Ú	</textarea>\r\n\r\n \r\n\r\n</div>\r\n \r\n <form action =\"TastoMap\" method = \"get\">\r\n <div class=\"container\"   style=\"   margin-left: -2px; margin-top: 80px;\">\r\n\t <img alt=\"\" src=\"https://www.researchgate.net/profile/Francesco-Mensa/publication/330994606/figure/fig1/AS:724708081283073@1549795279179/Figura-125-Mappa-della-citta-di-Roma-I-punti-colorati-indicano-i-luoghi-visitati.png\" alt=\"\" style=\"width: 976x; height: 976px; margin-left: -2px; margin-top:50px; overflow:hidden; z-index:-1\">\r\n \t\r\n<button id=\"amo\" type=\"submit\" name=\"action\" value=\"Eur\" onclick=\"myFunction(amo,yellow)\" style=\"width: 60x; height: 60px; background-color: Transparent;border:none; margin-top: 750px; position:absolute; margin-left:-600px; float:left;\"><img src=\"https://image.flaticon.com/icons/png/512/48/48703.png\" style=\"width: 55x; height: 55px;\" /></button>\r\n<button  id=\"amo2\"  type=\"submit\" name=\"action\" value=\"Villa\" onclick=\"myFunction(amo2,pink)\" style=\"width: 60x; height: 60px; background-color: Transparent; border: none; margin-top: 470px; position:absolute; margin-left:-650px; float:left;\"><img src=\"https://image.flaticon.com/icons/png/512/48/48703.png\" style=\"width: 55x; height: 55px;\" /></button>\r\n2write(Ljava/lang/String;)*
+16*˛
+18_
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp8 8(∆êç
+b
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp8≠ 8(∏
+%32void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*!
+
+descriptionjava.lang.String2print(Ljava/lang/String;)*
+17*î
+19_
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp8 8(∆¶£
+_
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp8 8(∆
+%31void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*∆√
+¿</textarea>\r\n<textarea name=\"text3\" id=\"text3\" readonly=\"readonly\";  style=\"resize: none; width: 300x; height: 40px;position:absolute;margin-top: 260px;z-index:0;margin-left:1000px\">2write(Ljava/lang/String;)*
+18*†
+0 "ò
+Ä
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaù ù(
+implicit return*√
+1Ä
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaõ õ(π
+∂
+Ä
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaõ õ(#
+%42javax.servlet.jsp.JspFactory"__id*
+""˘ˆ
+Ä
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaõ õ(9
+%43void"Qjavax.servlet.jsp.JspFactory#releasePageContext(Ljavax/servlet/jsp/PageContext;)V*%
+#
+%42javax.servlet.jsp.JspFactory*5
+3
+_jspx_page_contextjavax.servlet.jsp.PageContext23releasePageContext(Ljavax/servlet/jsp/PageContext;)*
+0* 
+40~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javac c(4ø
+º
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javac c(4,
+pageContextjavax.servlet.jsp.PageContext"__id*
+""º
+π
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javad d(2)
+sessionjavax.servlet.http.HttpSession"__id*
+""µ
+≤
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javag g(+"
+outjavax.servlet.jsp.JspWriter"__id*
+""ª
+∏
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javai i(1(
+	_jspx_outjavax.servlet.jsp.JspWriter"__id*
+""∆
+√
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaj j(<3
+_jspx_page_contextjavax.servlet.jsp.PageContext"__id*
+""*
+39*Ø	
+41~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java] ](¯ı
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java] ](>
+
+%9void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)ù
+ö
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java^ ^(D
+
+%10int"__id*
+""Çˇ
+
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java^ ^(à
+%11void"Fjavax.servlet.http.HttpServletResponse#sendError(ILjava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*
+
+
+%10int*CA
+?JSPs only permit GET, POST or HEAD. Jasper also permits OPTIONS2sendError(ILjava/lang/String;)"à
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java_ _(
+""*õ
+42~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java\J \(Päá
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java\J \(e
+%8boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+HEAD*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+40
+41*˘
+20_
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp7 7(¡ãà
+b
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp7≠ 7(≥
+%30void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+artistjava.lang.String2print(Ljava/lang/String;)*
+19*õ
+43~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java\* \(0äá
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java\* \(E
+%7boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+POST*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+40
+42*î
+21_
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp7 7(¡¶£
+_
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp7 7(¡
+%29void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*∆√
+¿</textarea>\r\n<textarea name=\"text2\" id=\"text2\" readonly=\"readonly\";  style=\"resize: none; width: 300x; height: 40px;position:absolute;margin-top: 180px;z-index:0;margin-left:1000px\">2write(Ljava/lang/String;)*
+20*ö
+44~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java\ \(âÜ
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.java\ \(%
+%6boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+GET*"
+ 
+_jspx_methodjava.lang.String2equals(Ljava/lang/Object;)*
+40
+43*¯
+22_
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp6 6(¿äá
+b
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp6≠ 6(≤
+%28void"6javax.servlet.jsp.JspWriter#print(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*
+
+placejava.lang.String2print(Ljava/lang/String;)*
+21*ä
+45~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaY Y(¯ı
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaY Y(>
+
+%5void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*	
+Allow*
+GET, HEAD, POST, OPTIONS2/setHeader(Ljava/lang/String;Ljava/lang/String;)"à
+~
+tC:\Users\vlrbr\OneDrive\Desktop\ShowRoomeBetter\trunk\.scannerwork\jsp\org\apache\jsp\WEB_002dINF\views\Map_jsp.javaZ Z(
+""*∞
+23`
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp0 0(!¡æ
+a
+VC:/Users/vlrbr/OneDrive/Desktop/ShowRoomeBetter/trunk/WebContent/WEB-INF/views/Map.jsp0 6(¿
+%27void")java.io.Writer#write(Ljava/lang/String;)V*$
+"
+outjavax.servlet.jsp.JspWriter*ﬂ‹
+Ÿ size=\"65\" maxlength=\"40\" ;style=\"background-color:\" #10030f=\"\" type=\"submit\"> </h1> \r\n             <form action=\"Logout\" method=\"post\">          <h1 style=\"margin-left: 1190px;margin-top: -57px;\" > <input value=\"logout\" size=\"65\" maxlength=\"40\" ;style=\"background-color:\" #10030f=\"\" type=\"submit\"> </h1></form> \r\n    \r\n    \r\n \r\n <div id=\"container2\"  style=\"display:\">\r\n  <h1> <label  style=\"width: 300x; height: 40px;position:absolute;margin-top: 30px;z-index:0;margin-left:1000px\"></label>    </h1> \r\n<textarea name=\"text1\" id=\"text1\" readonly=\"readonly\";  style=\"resize: none; width: 300x; height: 40px;position:absolute;margin-top: 100px;z-index:0;margin-left:1000px\">2write(Ljava/lang/String;)*
+22:
+%jsp_context:0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponseB,*
+(org.apache.jsp.WEB_002dINF.views.Map_jsp

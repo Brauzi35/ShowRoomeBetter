@@ -1,0 +1,15 @@
+SMAP
+RegistrazioneSponsor_jsp.java
+JSP
+*S JSP
+*F
++ 0 RegistrazioneSponsor.jsp
+WEB-INF/views/RegistrazioneSponsor.jsp
+*L
+2,2:116,0
+4,2:118
+5,38:120,0
+42:122
+42:124
+43,38:125,0
+*E
